@@ -4,7 +4,13 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<script src="/js/main.js"></script>
+			<script>
+				$(document).ready(function(){
+					$('#nav-icon').click(function(){
+						$(this).toggleClass('open');
+					});
+				});
+			</script>
 		</head>
 		<body>
 			<nav>
