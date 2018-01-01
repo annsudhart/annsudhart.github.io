@@ -32,10 +32,9 @@
 				</ul>
 			</footer>
 			<script>
-				$(document).ready(function(){
-					$('#nav-icon').click(function(){
-						$(this).toggleClass('open');
-					});
+				var hamburger = document.querySelector(".nav-icon");
+				hamburger.addEventListener("click", function() {
+				hamburger.classList.toggle("open");
 				});
 			</script>
 		</body>
