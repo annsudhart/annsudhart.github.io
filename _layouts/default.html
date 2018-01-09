@@ -7,12 +7,11 @@
 		</head>
 		<body>
 			<nav>
-			<div class="nav-icon">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
+				<div class="hamburger">
+  					<div class="hamburger-box">
+    					<div class="hamburger-inner"></div>
+  					</div>
+				</div>
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
 		        	<li><a href="/about">About</a></li>
@@ -32,9 +31,10 @@
 				</ul>
 			</footer>
 			<script>
-				var hamburger = document.querySelector(".nav-icon");
+				var hamburger = document.querySelector(".hamburger");
 				hamburger.addEventListener("click", function() {
-				hamburger.classList.toggle("open");
+				hamburger.classList.toggle("hamburger--elastic");
+				hamburger.classList.toggle("is-active");
 				});
 			</script>
 		</body>
