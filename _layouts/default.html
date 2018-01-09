@@ -14,10 +14,10 @@
   					</div>
 				</div>
 	    		<ul>
-	        		<li class="menu"><a href="/">Home</a></li>
-		        	<li class="menu" ><a href="/about">About</a></li>
-	        		<li class="menu"><a href="/cv">CV</a></li>
-	        		<li class="menu"><a href="/blog">Blog</a></li>
+	        		<li class="menu" id ="home"><a href="/">Home</a></li>
+		        	<li class="menu" id="about"><a href="/about">About</a></li>
+	        		<li class="menu" id="cv"><a href="/cv">CV</a></li>
+	        		<li class="menu" id="blog"><a href="/blog">Blog</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
@@ -33,11 +33,17 @@
 			</footer>
 			<script>
 				var hamburger = document.querySelector(".hamburger");
-				var listItem = document.querySelectorAll(".menu");
+				var listItemA = document.querySelector("#menu");
+				var listItemB = document.querySelector("#about");
+				var listItemC = document.querySelector("#cv");
+				var listItemD = document.querySelector("#blog");
 				hamburger.addEventListener("click", function() {
 					hamburger.classList.toggle("hamburger--elastic");
 					hamburger.classList.toggle("is-active");
-					listItem.classList.toggle("show");
+					listItemA.classList.toggle("show");
+					listItemB.classList.toggle("show");
+					listItemC.classList.toggle("show");
+					listItemD.classList.toggle("show");
 				});
 				
 			</script>
