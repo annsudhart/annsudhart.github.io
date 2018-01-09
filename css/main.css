@@ -109,3 +109,14 @@ footer {
   .hamburger--elastic.is-active .hamburger-inner::after {
     transform: translate3d(0, -20px, 0) rotate(-270deg);
     transition-delay: 0.075s; }
+
+.menu {
+  opacity: 0;
+  position: absolute;
+  transition: all .75s ease;
+}
+
+.menu.show{
+  opacity: 1;
+  position: static;
+}
