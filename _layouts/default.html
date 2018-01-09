@@ -32,11 +32,11 @@
 				</ul>
 			</footer>
 			<script>
-				var hamburger = document.querySelector(".hamburger");
-				var listItemA = document.querySelector("#menu");
-				var listItemB = document.querySelector("#about");
-				var listItemC = document.querySelector("#cv");
-				var listItemD = document.querySelector("#blog");
+				var hamburger = document.getElementByID(".hamburger");
+				var listItemA = document.getElementByID("menu");
+				var listItemB = document.getElementByID("about");
+				var listItemC = document.getElementByID("cv");
+				var listItemD = document.getElementById("blog");
 				hamburger.addEventListener("click", function() {
 					hamburger.classList.toggle("hamburger--elastic");
 					hamburger.classList.toggle("is-active");
