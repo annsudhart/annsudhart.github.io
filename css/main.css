@@ -1,8 +1,5 @@
 body {
-	background-image: url(../images/background_image.jpg);
-}
-#main {
-    margin: 60px auto;
+	margin: 60px auto;
     width: 70%;
 }
 nav ul, footer ul {
