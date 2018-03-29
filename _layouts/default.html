@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-				<div class="hamburger">
-					<div class="hamburger-box">
-					<div class="hamburger-inner"></div>
-					</div>
-				</div>
-				<ul>
-					<li class="menu" id ="home"><a href="/">Home</a></li>
-					<li class="menu" id="about"><a href="/about">About</a></li>
-					<li class="menu" id="cv"><a href="resume.pdf">CV</a></li>
-					<li class="menu" id="blog"><a href="blog.html">Blog</a></li>
-				</ul>
-			</nav>
-			<div class="container">
-				{{ content }}
-				</div><!-- /.container -->
-				<footer>
-					<ul>
-						<li><a href="mailto:sudharta.andrea@gmail.com">email</a></li>
-						<li><a href="https://github.com/annsudhart">github.com/annsudhart</a></li>
-					</ul>
-				</footer>
-				<script>
-					var hamburger = document.querySelector(".hamburger");
-					var listItemA = document.getElementById("home");
-					var listItemB = document.getElementById("about");
-					var listItemC = document.getElementById("cv");
-					var listItemD = document.getElementById("blog");
-					hamburger.addEventListener("click", function() {
-						hamburger.classList.toggle("hamburger--elastic");
-						hamburger.classList.toggle("is-active");
-						listItemA.classList.toggle("show");
-						listItemB.classList.toggle("show");
-						listItemC.classList.toggle("show");
-						listItemD.classList.toggle("show");
-					});
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <nav>
+      <div class="hamburger">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>				
+      <ul>
+	<li class="menu" id ="home"><a href="/">Home</a></li>
+	<li class="menu" id="about"><a href="/about">About</a></li>
+	<li class="menu" id="cv"><a href="resume.pdf">CV</a></li>
+	<li class="menu" id="blog"><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      {{ content }}
+    </div><!-- /.container -->
+    <footer>
+      <ul>
+        <li><a href="mailto:sudharta.andrea@gmail.com">email</a></li>
+        <li><a href="https://github.com/annsudhart">github.com/annsudhart</a></li>
+	<li><a href="https://annsudhart.github.io/blog"></a></li>
+      </ul>
+    </footer>
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      var listItemA = document.getElementById("home");
+      var listItemB = document.getElementById("about");
+      var listItemC = document.getElementById("cv");
+      var listItemD = document.getElementById("blog");
+      hamburger.addEventListener("click", function() {
+        hamburger.classList.toggle("hamburger--elastic");
+        hamburger.classList.toggle("is-active");
+        listItemA.classList.toggle("show");
+        listItemB.classList.toggle("show");
+	listItemC.classList.toggle("show");
+	listItemD.classList.toggle("show");
+      });
 
-				</script>
-			</div>
-		</body>
-	</html>
+    </script>
+  </body>
+</html>
