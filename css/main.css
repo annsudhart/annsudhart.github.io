@@ -57,18 +57,17 @@ html, body {
   -webkit-animation-duration: 250ms;
   z-index: 900;
 }
-<<<<<<< HEAD
 
 .bottom {
   top: 60px;
   -webkit-animation-duration: 250ms;
   transition: opacity 350ms linear;
   z-index: 900;
-=======
+}
+
 a {
     text-decoration: none;
     color: #ffd700;
->>>>>>> 9288fb62d0822d40eea94cb3cd0542bec24a5bc2
 }
 
 .ham-hidden {
