@@ -273,7 +273,7 @@ h1 {
 
 #bookeda {
   color: rgba(255, 255, 255, 0);
-  background-image:url('./bookeda.png');
+  background-image:url('./images/bookeda.png');
   transition: all 300ms ease;
 } 
 
@@ -284,7 +284,7 @@ h1 {
 
 #any-a {
   color: rgba(255, 255, 255, 0);
-  background-image:url('./any-a.png');
+  background-image:url('./images/any-a.png');
   transition: all 300ms ease;
 }
 
@@ -295,7 +295,7 @@ h1 {
 
 #yonder {
   color: rgba(255, 255, 255, 0);
-  background-image:url('./yonder.png');
+  background-image:url('./images/yonder.png');
   transition: all 300ms ease;
 }
 
