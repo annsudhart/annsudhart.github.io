@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
+  width: fit-content;
 }
 
 ::selection {
@@ -146,8 +146,9 @@ a {
 }
 
 #left-text {
+  position: relative;
   float: right;
-  margin-top: 25%;
+  top: 25%;
 }
 
 #left-text h1 {
@@ -165,13 +166,14 @@ a {
 }
 
 #right-text {
-  margin-top: calc(25% + 67.5px);
+  position: relative;
+  top: calc(25% + 67.5px);
+  width: fit-content;
 }
 
 
 #right-text h1 {
   background-color: white;
-  width: fit-content;
 }
 
 @keyframes float {
@@ -230,6 +232,14 @@ h1 {
 
 #work {
   margin-bottom: 20px;
+}
+
+p {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 80%;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 
 .buttons {
