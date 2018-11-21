@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
+  width: fit-content;
 }
 
 ::selection {
@@ -146,8 +146,9 @@ a {
 }
 
 #left-text {
+  position: relative;
   float: right;
-  margin-top: 25%;
+  top: 25%;
 }
 
 #left-text h1 {
@@ -165,24 +166,24 @@ a {
 }
 
 #right-text {
-  margin-top: calc(25% + 67.5px);
+  position: relative;
+  top: calc(25% + 67.5px);
 }
 
 
 #right-text h1 {
   background-color: white;
-  width: fit-content;
 }
 
 @keyframes float {
   0% {
     margin-top: -100px;
   }
-  
+
   50% {
     margin-top: -125px;
   }
-  
+
   100% {
     margin-top: -100px;
   }
@@ -225,12 +226,19 @@ h1 {
 }
 
 .section {
-  margin-top: 30px;
   padding-top: 30px;
 }
 
 #work {
   margin-bottom: 20px;
+}
+
+p {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 80%;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 
 .buttons {
@@ -279,7 +287,7 @@ h1 {
   color: rgba(255, 255, 255, 0);
   background-image:url('../images/bookeda.png');
   transition: all 300ms ease;
-} 
+}
 
 #bookeda:hover {
   background: rgba(255, 165, 0, 0.7);
@@ -358,4 +366,10 @@ i {
 #contact div div a {
   text-decoration: none;
   color: #fff;
+}
+
+@media only screen and (min-width: 450px) {
+  #right-text {
+    width: fit-content;
+  }
 }
