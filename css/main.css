@@ -4,7 +4,10 @@ html, body {
   padding: 0;
   height: 100%;
   width: fit-content;
+<<<<<<< HEAD
   overflow-x: hidden;
+=======
+>>>>>>> a8463e759c1927ae47efaa9d8cf8b4be792c29b9
 }
 
 ::selection {
