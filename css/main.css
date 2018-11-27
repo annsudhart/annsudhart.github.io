@@ -4,10 +4,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: fit-content;
-<<<<<<< HEAD
   overflow-x: hidden;
-=======
->>>>>>> a8463e759c1927ae47efaa9d8cf8b4be792c29b9
 }
 
 ::selection {
@@ -22,7 +19,7 @@ html, body {
   width: 70px;
   height: 100px;
   overflow: auto;
-  margin-right: 5px;
+  margin-right: 15px;
   right: 0;
   bottom: 0px;
   z-index: 900;
@@ -107,8 +104,7 @@ a {
 }
 
 #links ul li a:hover {
-  color: #00abff;
-  padding-right: 3px;
+  color: white;
   text-decoration: none;
   background-color: rgba(0,206,209,0.3);
 }
