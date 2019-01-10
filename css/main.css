@@ -88,7 +88,7 @@ a {
   font-family: 'Arimo', sans-serif;
   background-color: rgba(0,206,209,0.7);
   height: 100%;
-  z-index: 900;
+  z-index: 90;
 }
 
 #links ul {
