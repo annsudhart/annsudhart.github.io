@@ -405,11 +405,12 @@ i {
   margin: 30px 0 30px;
 }
 
-#contact div div {
+#contact ul li {
   text-align: center;
+  list-style: none;
 }
 
-#contact div div a {
+#contact ul li a {
   text-decoration: none;
   color: #fff;
 }
