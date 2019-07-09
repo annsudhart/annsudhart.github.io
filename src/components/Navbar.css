@@ -1,0 +1,24 @@
+.navbar {
+    box-shadow: 1px 1px 10px 0px lightgray;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    position: fixed;
+    background-color: #fff;
+}
+
+.navbar-brand {
+    display: flex;
+    margin: auto 0px
+}
+
+.navbar-item {
+    display: flex;
+    margin: 5px 20px;
+}
+
+ul {
+    margin: 0px;
+    display: flex;
+    margin-left: auto;
+}
