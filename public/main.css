@@ -4,3 +4,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
+
+#root {
+    height: 100%;
+}
