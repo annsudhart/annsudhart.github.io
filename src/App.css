@@ -24,10 +24,6 @@ section {
 
 .splash {
     padding: 80px 0px;
-    background-color: #cc5577;
-    background-image: url('/img/Liquid-Cheese-Lavender.svg');
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 h1 {
@@ -64,4 +60,24 @@ h1 {
     h1 {
         font-size: 8em;
     }
+}
+
+.splashBackground {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    background-position: center !important;
+    transform: translateY(0px);
+}
+
+.splashBackground:nth-child(2) {
+    margin-top: 25px;
+}
+
+.splashBackground:nth-child(3) {
+    margin-top: 50px;
+}
+
+#about {
+    background-color: purple;
 }

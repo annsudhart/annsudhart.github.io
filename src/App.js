@@ -9,6 +9,7 @@ function App() {
       
       <Navbar/>
       <section className="splash">
+        <img className="splashBackground" src="/img/Liquid-Grape1.svg"/>
         <div className="splash-container w-100 h-100">
           <div className="row">
             <div>
@@ -22,7 +23,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="about">
         <p>
           Welcome to my webpage! I'm Andrea, a third year student in
           UC San Diego studying Math-CS. My interests lie in the intersection
