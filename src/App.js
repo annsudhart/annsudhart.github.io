@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Arrow from './components/Arrow';
-
+import {TwitterTimelineEmbed} from 'react-twitter-embed';
 function App() {
   return (
     <div className="App">
@@ -30,8 +30,9 @@ function App() {
           between human computer interaction and data.
         </p>
       </section>
-      <section>
+      <section className="moreDivider">
         <h3>Community Involvement and More</h3>
+        <img src="/img/community.svg"/>
         <p>
           I am also striving to improve my leadership skills as a chair of 
           my college's residence hall council. Furthermore, I am attending 
@@ -40,9 +41,37 @@ function App() {
           in HackXX 2018, a hackathon I went to last year.
         </p>
       </section>
-      <section>
+      <section className="more">
         <h4>Hackathons I've been to</h4>
+        <ul>
+          <li>
+            <div className="hexagon"></div>
+            SDHacks 2018
+          </li>
+          <li>
+            <div className="hexagon"></div>
+            HackXX 2018, 2019
+          </li>
+          <li>
+            <div className="hexagon"></div>
+            Rose Hack 2019
+          </li>
+          <li>
+            <div className="hexagon"></div>
+            Spectra 2.0
+          </li>
+        </ul>
+        <img src="/img/sdhacks-logo.svg"/>
+        <img src="/img/hackxx-logo.svg"/>
+        <img src="/img/rosehack-logo.png"/>
         <h4>Follow me on social media</h4>
+        <TwitterTimelineEmbed
+          sourceType="profile"
+          screenName="SudhartaAndrea"
+          options={{width: 600, height: 800}}
+        />
+        <script async src="https://platform.twitter.com/widgets.js" 
+                charset="utf-8"></script>
       </section>
       <section>
         <h3>Contact</h3>
