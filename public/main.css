@@ -9,3 +9,20 @@ html, body {
     height: 100%;
     overflow: auto;
 }
+
+.contact li {
+    list-style: none;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+    width: none;
+}
+.contact-icon {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius:50%;
+    background-color: #00ced1;
+}

@@ -45,25 +45,26 @@ function App() {
         <h4>Hackathons I've been to</h4>
         <ul>
           <li>
-            <div className="hexagon"></div>
+            <div className="hexagon" 
+                 style={{"background-image": "url('/img/sdhacks-logo.svg')"}}></div>
             SDHacks 2018
           </li>
           <li>
-            <div className="hexagon"></div>
+            <div className="hexagon"
+                 style={{"background-image": "url('/img/hackxx-logo.svg')", "background-color": "#941470", "background-size": "70%"}}></div>
             HackXX 2018, 2019
           </li>
           <li>
-            <div className="hexagon"></div>
+            <div className="hexagon"
+                 style={{"background-image": "url('/img/rosehack-logo.png')"}}></div>
             Rose Hack 2019
           </li>
           <li>
-            <div className="hexagon"></div>
+            <div className="hexagon"
+                 style={{"background-image": "url('/img/spectra-logo.png')"}}></div>
             Spectra 2.0
           </li>
         </ul>
-        <img src="/img/sdhacks-logo.svg"/>
-        <img src="/img/hackxx-logo.svg"/>
-        <img src="/img/rosehack-logo.png"/>
         <h4>Follow me on social media</h4>
         <TwitterTimelineEmbed
           sourceType="profile"
@@ -73,8 +74,29 @@ function App() {
         <script async src="https://platform.twitter.com/widgets.js" 
                 charset="utf-8"></script>
       </section>
-      <section>
+      <section className="contact">
         <h3>Contact</h3>
+        <ul>
+          <li>
+            <a href="mailto:sudharta.andrea@gmail.com">
+              <div className="contact-icon"></div>
+              Email: sudharta.andrea@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="twitter.com/SudhartaAndrea">
+              <div className="contact-icon"></div>
+              Twitter: @SudhartaAndrea
+            </a>
+          </li>
+          <li>
+            <a href="github.com/annsudhart">
+              <div className="contact-icon"></div>
+              Github: annsudhart
+            </a>
+          </li>
+        </ul>
+        <p>Made with 💙 and 🌮 using ReactJS. No robots were harmed in the creation of this website ✌️</p>
       </section>
     </div>
   );
