@@ -9,7 +9,11 @@ function App() {
       
       <Navbar/>
       <section className="splash">
-        <img className="splashBackground" src="/img/Liquid-Grape1.svg"/>
+        <div id="bkgd-img-splash">
+          <div style={{"background-image": "url('/img/Liquid-Inv1.svg')", "margin-top": "100px"}}></div>
+          <div style={{"background-image": "url('/img/Liquid-Inv2.svg')", "margin-top": "50px"}}></div>
+          <div style={{"background-image": "url('/img/Liquid-Inv3.svg')"}}></div>
+        </div>
         <div className="splash-container w-100 h-100">
           <div className="row">
             <div>
