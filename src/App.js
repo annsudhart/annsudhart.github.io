@@ -9,6 +9,7 @@ function App() {
       
       <Navbar/>
       <section className="splash">
+        
         <div id="bkgd-img-splash">
           <div style={{"background-image": "url('/img/Liquid-Inv1.svg')", "margin-top": "100px"}}></div>
           <div style={{"background-image": "url('/img/Liquid-Inv2.svg')", "margin-top": "50px"}}></div>
