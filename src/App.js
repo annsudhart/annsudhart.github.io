@@ -11,9 +11,9 @@ function App() {
       <section className="splash">
         
         <div id="bkgd-img-splash">
-          <div style={{"background-image": "url('/img/Liquid-Inv1.svg')", "margin-top": "100px"}}></div>
-          <div style={{"background-image": "url('/img/Liquid-Inv2.svg')", "margin-top": "50px"}}></div>
-          <div style={{"background-image": "url('/img/Liquid-Inv3.svg')"}}></div>
+          <div style={{"backgroundImage": "url('/img/Liquid-Inv1.svg')", "margin-top": "100px"}}></div>
+          <div style={{"backgroundImage": "url('/img/Liquid-Inv2.svg')", "margin-top": "50px"}}></div>
+          <div style={{"backgroundImage": "url('/img/Liquid-Inv3.svg')"}}></div>
         </div>
         <div className="splash-container w-100 h-100">
           <div className="row">
@@ -34,6 +34,14 @@ function App() {
           UC San Diego studying Math-CS. My interests lie in the intersection
           between human computer interaction and data.
         </p>
+        <ul className="flex-container">
+          <li><a className="flex-item animated fadeInUp" id="computing-paths" href="http://computingpaths.ucsd.edu">Computing Paths</a></li>
+          <li><a className="flex-item animated fadeInUp" id="yonder" href="https://annsudhart.gitub.io/yonder-site/index.html">Yonder Dynamics</a></li>
+          <li><a className="flex-item animated fadeInUp" id="carbon-calc" href="https://github.com/absambam/Carbon-Footprint-Calculator/">Carbon Footprint Calculator</a></li>
+          <li><a className="flex-item animated fadeInUp" id="any-a" href="https://annsudhart.github.io/hackxx2018/">ANY-A</a></li>
+          <li><a className="flex-item animated fadeInUp" id="bookeda" href="https://andrea.schswdd.net/bookeda/index.html">BookEDA</a></li>
+          <li><a className="flex-item animated fadeInUp" id="github-link" href="https://github.com/annsudhart">More on GitHub!</a></li>
+        </ul>
       </section>
       <section className="moreDivider">
         <h3>Community Involvement and More</h3>
@@ -51,22 +59,22 @@ function App() {
         <ul>
           <li>
             <div className="hexagon" 
-                 style={{"background-image": "url('/img/sdhacks-logo.svg')"}}></div>
+                 style={{"backgroundImage": "url('/img/sdhacks-logo.svg')"}}></div>
             SDHacks 2018
           </li>
           <li>
             <div className="hexagon"
-                 style={{"background-image": "url('/img/hackxx-logo.svg')", "background-color": "#941470", "background-size": "70%"}}></div>
+                 style={{"backgroundImage": "url('/img/hackxx-logo.svg')", "background-color": "#941470", "background-size": "70%"}}></div>
             HackXX 2018, 2019
           </li>
           <li>
             <div className="hexagon"
-                 style={{"background-image": "url('/img/rosehack-logo.png')"}}></div>
+                 style={{"backgroundImage": "url('/img/rosehack-logo.png')"}}></div>
             Rose Hack 2019
           </li>
           <li>
             <div className="hexagon"
-                 style={{"background-image": "url('/img/spectra-logo.png')"}}></div>
+                 style={{"backgroundImage": "url('/img/spectra-logo.png')"}}></div>
             Spectra 2.0
           </li>
         </ul>
@@ -84,19 +92,19 @@ function App() {
         <ul>
           <li>
             <a href="mailto:sudharta.andrea@gmail.com">
-              <div className="contact-icon"></div>
+              <i className="contact-icon fas fa-envelope" alt="email symbol"></i>
               Email: sudharta.andrea@gmail.com
             </a>
           </li>
           <li>
             <a href="twitter.com/SudhartaAndrea">
-              <div className="contact-icon"></div>
+              <i className="contact-icon fab fa-github"  alt="github symbol"></i>
               Twitter: @SudhartaAndrea
             </a>
           </li>
           <li>
             <a href="github.com/annsudhart">
-              <div className="contact-icon"></div>
+              <i className="contact-icon fab fa-twitter"  alt="twitter symbol"></i>
               Github: annsudhart
             </a>
           </li>
