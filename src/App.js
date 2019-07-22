@@ -11,7 +11,7 @@ function App() {
       <section className="splash">
         
         <div id="bkgd-img-splash">
-          <div style={{"backgroundImage": "url('/img/Liquid-Inv1.svg')", "margin-top": "100px"}}></div>
+          <div style={{"backgroundImage": "url('/img/Liquid-Inv1.svg')", "margin-top": "70px"}}></div>
           <div style={{"backgroundImage": "url('/img/Liquid-Inv2.svg')", "margin-top": "50px"}}></div>
           <div style={{"backgroundImage": "url('/img/Liquid-Inv3.svg')"}}></div>
         </div>
@@ -69,7 +69,7 @@ function App() {
           </li>
           <li>
             <div className="hexagon"
-                 style={{"backgroundImage": "url('/img/rosehack-logo.png')"}}></div>
+                 style={{"backgroundImage": "url('/img/rosehack-logo.png')", "background-size": "130%"}}></div>
             Rose Hack 2019
           </li>
           <li>
