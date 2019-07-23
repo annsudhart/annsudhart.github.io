@@ -28,7 +28,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="about">
+      <section id="about-me" className="about">
         <p>
           Welcome to my webpage! I'm Andrea, a third year student in
           UC San Diego studying Math-CS. My interests lie in the intersection
