@@ -2,6 +2,7 @@ section {
     padding: 30px 20px;
     min-height: 100%;
     text-align: center;
+    width: 100%;
 }
 
 h1 {
@@ -44,6 +45,7 @@ p {
 
 .splash {
     padding: 0px;
+    width: 100%;
     text-align: initial;
     color: white;
     background-color: #261494;
@@ -366,9 +368,16 @@ i::before {
 @media only screen and (max-width: 600px) {
     .splash-container {
         flex-direction: column;
+        min-width: fit-content;
     }
+    .splash-container .row:first-child {
+        width: auto;
+        margin-top: 40px;
+    }
+
     .splash-container .row {
         width: auto;
+        min-width: fit-content;
     }
     h1 {
         margin: 30px auto;
@@ -376,6 +385,10 @@ i::before {
 
     .flex-item {
         width: 300px;
+    }
+
+    .twitter-frame {
+        padding: 0px 20px;
     }
 }
 

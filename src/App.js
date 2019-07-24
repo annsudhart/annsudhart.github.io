@@ -79,11 +79,13 @@ function App() {
           </li>
         </ul>
         <h4>Follow me on social media</h4>
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName="SudhartaAndrea"
-          options={{width: 600, height: 800}}
-        />
+        <div className="twitter-frame">
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="SudhartaAndrea"
+            options={{width: 600, height: 800, margin: 20}}
+          />
+        </div>
         <script async src="https://platform.twitter.com/widgets.js" 
                 charset="utf-8"></script>
       </section>
