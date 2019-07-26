@@ -56,28 +56,30 @@ function App() {
       </section>
       <section className="more">
         <h4>Hackathons I've been to</h4>
-        <ul>
-          <li>
-            <div className="hexagon" 
-                 style={{"backgroundImage": "url('/img/sdhacks-logo.svg')"}}></div>
-            SDHacks 2018
-          </li>
-          <li>
-            <div className="hexagon"
-                 style={{"backgroundImage": "url('/img/hackxx-logo.svg')", "background-color": "#941470", "background-size": "70%"}}></div>
-            HackXX 2018, 2019
-          </li>
-          <li>
-            <div className="hexagon"
-                 style={{"backgroundImage": "url('/img/rosehack-logo.png')", "background-size": "130%"}}></div>
-            Rose Hack 2019
-          </li>
-          <li>
-            <div className="hexagon"
-                 style={{"backgroundImage": "url('/img/spectra-logo.png')"}}></div>
-            Spectra 2.0
-          </li>
-        </ul>
+        <div className="hex-wrapper">
+          <ul>
+            <li>
+              <div className="hexagon" 
+                  style={{"backgroundImage": "url('/img/sdhacks-logo.svg')"}}></div>
+              SDHacks 2018
+            </li>
+            <li>
+              <div className="hexagon"
+                  style={{"backgroundImage": "url('/img/hackxx-logo.svg')", "background-color": "#941470", "background-size": "70%"}}></div>
+              HackXX 2018, 2019
+            </li>
+            <li>
+              <div className="hexagon"
+                  style={{"backgroundImage": "url('/img/rosehack-logo.png')", "background-size": "130%"}}></div>
+              Rose Hack 2019
+            </li>
+            <li>
+              <div className="hexagon"
+                  style={{"backgroundImage": "url('/img/spectra-logo.png')"}}></div>
+              Spectra 2.0
+            </li>
+          </ul>
+        </div>
         <h4>Follow me on social media</h4>
         <div className="twitter-frame">
           <TwitterTimelineEmbed

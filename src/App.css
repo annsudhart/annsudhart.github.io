@@ -1,5 +1,4 @@
 section {
-    padding: 30px 20px;
     min-height: 100%;
     text-align: center;
     width: 100%;
@@ -123,7 +122,8 @@ p {
 }
 
 h3 {
-    margin-top: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
     text-align: center;
     font-size: 2.2em;
 }
@@ -151,24 +151,31 @@ h3 {
     color: white;
 }
 
+.hex-wrapper {
+    display: block;
+    min-height: 300px;
+}
 
 .more ul{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 50px;
-    width: 100%;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+.more ul:after {
+    content: "";
+    display: block;
+    clear: both;
 }
   
 .more li {
-    width: 200px;
-    padding: 0 0 231px 0;
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 48%;
+    padding: 0 0 57% 0;
     -o-transform: rotate(-60deg) skewY(30deg);
     -moz-transform: rotate(-60deg) skewY(30deg);
     -webkit-transform: rotate(-60deg) skewY(30deg);
@@ -177,8 +184,8 @@ h3 {
     background: #00ced1;
     overflow: hidden;
     visibility: hidden;
-    margin-top: -50px;
-    height: 0;
+    height: 0px;
+    margin: 0 0.5%;
 }
 
 .hexagon{
@@ -199,8 +206,8 @@ h3 {
     background-size: cover;
 }
       
-.more li *{
-    visibility: visible
+.more li * {
+    visibility: visible;
 }
 
 .contact {
@@ -389,6 +396,15 @@ i::before {
 
     .twitter-frame {
         padding: 0px 20px;
+    }
+    .more ul {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .more ul {
+        max-width: 400px;
     }
 }
 

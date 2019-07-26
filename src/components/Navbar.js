@@ -4,7 +4,7 @@ import './Navbar.css';
 class Navbar extends React.Component {
     render() {
         return (
-            <nav className="navbar navbar-expand w-100" href="">
+            <nav className="navbar navbar-expand" href="">
                 <a className="navbar-brand">Andrea Sudharta</a>
                 <ul>
                     <li className="navbar-item">About</li>

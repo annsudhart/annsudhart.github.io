@@ -1,4 +1,5 @@
 .navbar {
+    width: 100%;
     box-shadow: 1px 1px 10px 0px lightgray;
     display: flex;
     flex-flow: row nowrap;
@@ -25,5 +26,7 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
-    
+    .navbar ul {
+        display: none;
+    }
 }
