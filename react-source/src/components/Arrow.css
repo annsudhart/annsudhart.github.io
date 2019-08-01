@@ -1,0 +1,68 @@
+
+#arrow-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+}
+
+#arrow {
+  border: solid #fff;
+  border-width: 0 15px 15px 0;
+  display: inline-block;
+  padding: 7px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #00cccc;
+  animation: glow 12s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    border-color: #00ced1;
+  }
+
+  33% {
+    border-color: #725feb;
+  }
+
+  66% {
+    border-color: #941470;
+  }
+
+  100% {
+    border-color: #00ced1;
+  }
+}  
+  /* background: linear-gradient(0deg, #440082, #00ced1, #b100af);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 59s ease infinite;
+-moz-animation: AnimationName 59s ease infinite;
+animation: AnimationName 59s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+} */
+
+@media only screen and (max-width: 720px) {
+
+  #arrow-container {
+    display: none;
+  }
+}
