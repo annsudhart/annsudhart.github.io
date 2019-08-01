@@ -34,6 +34,10 @@ function App() {
           UC San Diego studying Math-CS. My interests lie in the intersection
           between human computer interaction and data.
         </p>
+        <a target="_blank" href="resume.pdf" class="resume-btn">
+          View my resume
+        </a>
+        <h2>Projects</h2>
         <ul className="flex-container">
           <li><a className="flex-item animated fadeInUp" id="computing-paths" href="http://computingpaths.ucsd.edu">Computing Paths</a></li>
           <li><a className="flex-item animated fadeInUp" id="yonder" href="https://annsudhart.gitub.io/yonder-site/index.html">Yonder Dynamics</a></li>
@@ -43,8 +47,8 @@ function App() {
           <li><a className="flex-item animated fadeInUp" id="github-link" href="https://github.com/annsudhart">More on GitHub!</a></li>
         </ul>
       </section>
-      <section className="moreDivider">
-        <h3>Community Involvement and More</h3>
+      <section id="moreDivider" className="moreDivider">
+        <h1>Community Involvement and More</h1>
         <img src="/img/community.svg"/>
         <p>
           I am also striving to improve my leadership skills as a chair of 
@@ -55,7 +59,7 @@ function App() {
         </p>
       </section>
       <section className="more">
-        <h4>Hackathons I've been to</h4>
+        <h2>Hackathons I've been to</h2>
         <div className="hex-wrapper">
           <ul>
             <li>
@@ -80,7 +84,7 @@ function App() {
             </li>
           </ul>
         </div>
-        <h4>Follow me on social media</h4>
+        <h2>Follow me on social media</h2>
         <div className="twitter-frame">
           <TwitterTimelineEmbed
             sourceType="profile"
@@ -91,8 +95,8 @@ function App() {
         <script async src="https://platform.twitter.com/widgets.js" 
                 charset="utf-8"></script>
       </section>
-      <section className="contact">
-        <h3>Contact</h3>
+      <section id="contact" className="contact">
+        <h2>Contact</h2>
         <ul>
           <li>
             <a href="mailto:sudharta.andrea@gmail.com">
@@ -101,13 +105,13 @@ function App() {
             </a>
           </li>
           <li>
-            <a href="twitter.com/SudhartaAndrea">
+            <a href="https://github.com/annsudhart">
               <i className="contact-icon fab fa-github"  alt="github symbol"></i>
               Twitter: @SudhartaAndrea
             </a>
           </li>
           <li>
-            <a href="github.com/annsudhart">
+            <a href="https://twitter.com/SudhartaAndrea">
               <i className="contact-icon fab fa-twitter"  alt="twitter symbol"></i>
               Github: annsudhart
             </a>

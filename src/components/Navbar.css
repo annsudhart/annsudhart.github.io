@@ -3,7 +3,6 @@
     box-shadow: 1px 1px 10px 0px lightgray;
     display: flex;
     flex-flow: row nowrap;
-    padding: 15px;
     position: fixed;
     background-color: #fff;
     z-index: 2;
@@ -11,22 +10,94 @@
 
 .navbar-brand {
     display: flex;
-    margin: auto 0px
+    padding: 15px 20px;
 }
 
-.navbar-item {
+.navbar-list {
     display: flex;
-    margin: 5px 20px;
+    padding: 15px 20px;
+    transition: color 200ms ease, background-color 200ms ease;
+}
+
+.navbar-item a:visited {
+    color: initial;
+}
+
+.navbar-item:hover, .navbar-item a:hover {
+    cursor: pointer;
+    color: #941470;
+    transition: color 100ms ease;
+}
+
+.navbar-item a {
+    text-decoration: none;
 }
 
 ul {
     margin: 0px;
     display: flex;
     margin-left: auto;
+    margin-right: 15px;
+}
+
+.menu-icon {
+    display: flex;
+    margin: 8px;
+    margin-left: auto;
+    display: none;
+}
+
+svg#hamburger-icon:hover {
+    stroke: #261494;
+    transition: stroke 200ms ease-in;
+    animation: trace 1s ease-in-out 1;
+}
+
+.selected {
+    background-color: rgba(0, 206, 209, 0.7);
+}
+
+@keyframes trace {
+    25% {
+        border-top: 2px solid #261494;
+    }
+
+    50% {
+        border-top: 2px solid #261494;
+        border-right: 2px solid #261494;
+    }
+
+    75% {
+        border-top: 2px solid #261494;
+        border-right: 2px solid #261494;
+        border-bottom: 2px solid #261494;
+    }
+
+    100% {
+        border-top: 2px solid #261494;
+        border-right: 2px solid #261494;
+        border-bottom: 2px solid #261494;
+        border-left: 2px solid #261494;
+    }
+}
+
+svg#hamburger-icon {
+    width: 25px;
+    stroke: black;
+    stroke-width: 4px;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 8px;
+    float: right;
 }
 
 @media only screen and (max-width: 600px) {
     .navbar ul {
         display: none;
     }
+
+    .menu-icon {
+        display: flex;
+    }
+
 }

@@ -5,12 +5,20 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className="navbar navbar-expand" href="">
-                <a className="navbar-brand">Andrea Sudharta</a>
+                <a className="navbar-brand navbar-item"><a href="">Andrea Sudharta</a></a>
+                <div className="menu-icon navbar-item">
+                    <svg id="hamburger-icon" viewBox="0 0 24 18">
+                        <line fill="none" stroke-miterlimit="10" x1="0" y1="2" x2="24" y2="2"></line>
+                        <line fill="none" stroke-miterlimit="10" x1="0" y1="9" x2="24" y2="9"></line>
+                        <line fill="none" stroke-miterlimit="10" x1="0" y1="16" x2="24" y2="16"></line>
+                    </svg>
+                </div>
                 <ul>
-                    <li className="navbar-item">About</li>
-                    <li className="navbar-item">Projects</li>
-                    <li className="navbar-item">Resume</li>
-                    <li className="navbar-item">GitHub</li>
+                    <li className="navbar-list navbar-item"><a href="#about-me">Projects</a></li>
+                    <li className="navbar-list navbar-item"><a href="#more">About Me</a></li>
+                    <li className="navbar-list navbar-item"><a href="#contact">Contact</a></li>
+                    <li className="navbar-list navbar-item"><a href="resume.pdf">Resume</a></li>
+                    <li className="navbar-list navbar-item"><a href="https://github.com/annsudhart">GitHub</a></li>
                 </ul>
             </nav>
         );
