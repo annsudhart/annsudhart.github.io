@@ -11,8 +11,8 @@ function App() {
       <section className="splash">
         
         <div id="bkgd-img-splash">
-          <div style={{"backgroundImage": "url('/img/Liquid-Inv1.svg')", "margin-top": "70px"}}></div>
-          <div style={{"backgroundImage": "url('/img/Liquid-Inv2.svg')", "margin-top": "50px"}}></div>
+          <div style={{"backgroundImage": "url('/img/Liquid-Inv1.svg')", "marginTop": "70px"}}></div>
+          <div style={{"backgroundImage": "url('/img/Liquid-Inv2.svg')", "marginTop": "50px"}}></div>
           <div style={{"backgroundImage": "url('/img/Liquid-Inv3.svg')"}}></div>
         </div>
         <div className="splash-container w-100 h-100">
@@ -24,7 +24,7 @@ function App() {
             </div>
           </div>
           <div className="row">
-            <img id="splashimg" src="/img/splash_image.svg"/>
+            <img id="splashimg" alt="" src="/img/splash_image.svg"/>
           </div>
         </div>
       </section>
@@ -34,7 +34,7 @@ function App() {
           UC San Diego studying Math-CS. My interests lie in the intersection
           between human computer interaction and data.
         </p>
-        <a target="_blank" href="resume.pdf" class="resume-btn">
+        <a target="_blank" href="resume.pdf" className="resume-btn">
           View my resume
         </a>
         <h2>Projects</h2>
@@ -49,7 +49,7 @@ function App() {
       </section>
       <section id="moreDivider" className="moreDivider">
         <h1>Community Involvement and More</h1>
-        <img src="/img/community.svg"/>
+        <img alt="teamwork" src="/img/community.svg"/>
         <p>
           I am also striving to improve my leadership skills as a chair of 
           my college's residence hall council. Furthermore, I am attending 
@@ -69,12 +69,12 @@ function App() {
             </li>
             <li>
               <div className="hexagon"
-                  style={{"backgroundImage": "url('/img/hackxx-logo.svg')", "background-color": "#941470", "background-size": "70%"}}></div>
+                  style={{"backgroundImage": "url('/img/hackxx-logo.svg')", "backgroundColor": "#941470", "backgroundSize": "70%"}}></div>
               HackXX 2018, 2019
             </li>
             <li>
               <div className="hexagon"
-                  style={{"backgroundImage": "url('/img/rosehack-logo.png')", "background-size": "130%"}}></div>
+                  style={{"backgroundImage": "url('/img/rosehack-logo.png')", "backgroundSize": "130%"}}></div>
               Rose Hack 2019
             </li>
             <li>
@@ -93,7 +93,7 @@ function App() {
           />
         </div>
         <script async src="https://platform.twitter.com/widgets.js" 
-                charset="utf-8"></script>
+                charSet="utf-8"></script>
       </section>
       <section id="contact" className="contact">
         <h2>Contact</h2>
@@ -117,7 +117,7 @@ function App() {
             </a>
           </li>
         </ul>
-        <p>Made with 💙 and 🌮 using ReactJS. No robots were harmed in the creation of this website ✌️</p>
+        <p>Made with <span role="img" aria-label="care">💙</span> and <span role="img" aria-label="tacos">🌮</span> using ReactJS. No robots were harmed in the creation of this website ✌️</p>
       </section>
     </div>
   );

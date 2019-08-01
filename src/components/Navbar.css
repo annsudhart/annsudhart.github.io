@@ -11,6 +11,7 @@
 .navbar-brand {
     display: flex;
     padding: 15px 20px;
+    color: black;
 }
 
 .navbar-list {
@@ -19,7 +20,7 @@
     transition: color 200ms ease, background-color 200ms ease;
 }
 
-.navbar-item a:visited {
+.navbar-item a:visited, .navbar-item:visited {
     color: initial;
 }
 
@@ -29,7 +30,7 @@
     transition: color 100ms ease;
 }
 
-.navbar-item a {
+.navbar-item a, .navbar-item {
     text-decoration: none;
 }
 

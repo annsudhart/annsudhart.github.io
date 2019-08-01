@@ -5,12 +5,12 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className="navbar navbar-expand" href="">
-                <a className="navbar-brand navbar-item"><a href="">Andrea Sudharta</a></a>
+                <a href="#" className="navbar-brand navbar-item">Andrea Sudharta</a>
                 <div className="menu-icon navbar-item">
                     <svg id="hamburger-icon" viewBox="0 0 24 18">
-                        <line fill="none" stroke-miterlimit="10" x1="0" y1="2" x2="24" y2="2"></line>
-                        <line fill="none" stroke-miterlimit="10" x1="0" y1="9" x2="24" y2="9"></line>
-                        <line fill="none" stroke-miterlimit="10" x1="0" y1="16" x2="24" y2="16"></line>
+                        <line fill="none" strokeMiterlimit="10" x1="0" y1="2" x2="24" y2="2"></line>
+                        <line fill="none" strokeMiterlimit="10" x1="0" y1="9" x2="24" y2="9"></line>
+                        <line fill="none" strokeMiterlimit="10" x1="0" y1="16" x2="24" y2="16"></line>
                     </svg>
                 </div>
                 <ul>
