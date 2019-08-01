@@ -32,19 +32,19 @@ function App() {
         <p>
           Welcome to my webpage! I'm Andrea, a third year student in
           UC San Diego studying Math-CS. My interests lie in the intersection
-          between human computer interaction and data.
+          between human computer interaction and data. Currently, I am a data programmer for the UCSD School of Medicine.
         </p>
         <a target="_blank" href="resume.pdf" className="resume-btn">
           View my resume
         </a>
         <h2>Projects</h2>
         <ul className="flex-container">
+          <li><a className="flex-item animated fadeInUp" id="maze-rescue" href="http://maze-rescue.com">Maze Rescue</a></li>
+          <li><a className="flex-item animated fadeInUp" id="truther-tweet" href="https://github.com/annsudhart/truther-tweet">US Politician+Twitter Analysis</a></li>
+          <li><a className="flex-item animated fadeInUp" id="card-connect" href="https://a10-cardconnect.herokuapp.com/">Card Connect</a></li>
           <li><a className="flex-item animated fadeInUp" id="computing-paths" href="http://computingpaths.ucsd.edu">Computing Paths</a></li>
-          <li><a className="flex-item animated fadeInUp" id="yonder" href="https://annsudhart.gitub.io/yonder-site/index.html">Yonder Dynamics</a></li>
           <li><a className="flex-item animated fadeInUp" id="carbon-calc" href="https://github.com/absambam/Carbon-Footprint-Calculator/">Carbon Footprint Calculator</a></li>
           <li><a className="flex-item animated fadeInUp" id="any-a" href="https://annsudhart.github.io/hackxx2018/">ANY-A</a></li>
-          <li><a className="flex-item animated fadeInUp" id="bookeda" href="https://andrea.schswdd.net/bookeda/index.html">BookEDA</a></li>
-          <li><a className="flex-item animated fadeInUp" id="github-link" href="https://github.com/annsudhart">More on GitHub!</a></li>
         </ul>
       </section>
       <section id="moreDivider" className="moreDivider">
