@@ -42,13 +42,16 @@ ul {
 }
 
 .menu-icon {
-    display: flex;
     margin: 8px;
     margin-left: auto;
     display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 33px;
 }
 
-svg#hamburger-icon:hover {
+svg#hamburger-icon:hover, svg.nav-expand {
     stroke: #261494;
     transition: stroke 200ms ease-in;
     animation: trace 1s ease-in-out 1;
@@ -56,6 +59,12 @@ svg#hamburger-icon:hover {
 
 .selected {
     background-color: rgba(0, 206, 209, 0.7);
+}
+
+.nav-expand {
+    display: block!important;
+    margin: 0px;
+    padding: 0px;
 }
 
 @keyframes trace {
@@ -93,6 +102,14 @@ svg#hamburger-icon {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-item {
+        background-color: white;
+    }
     .navbar ul {
         display: none;
     }

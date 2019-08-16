@@ -1,7 +1,6 @@
 $(document).scroll(function() {
 
     if ( $(this).scrollTop() > $('.splash .row div').height()/8 ) {
-      // console.log('turning blue');
       $('.splash .row div h1').addClass('blue');
       $('.splash .row div h1').removeClass('white');
     } else {
@@ -13,7 +12,6 @@ $(document).scroll(function() {
       $('.navbar-item').removeClass('selected');
       $('.navbar-brand').addClass('selected');
     } else if( $(this).scrollTop() >= $('#about-me')[0].offsetTop  && $(this).scrollTop() < $('.moreDivider')[0].offsetTop - $('nav').height() - 1 ) {
-      // console.log('resume');
       // select projects
       
       $('.navbar-item').removeClass('selected');
@@ -31,36 +29,36 @@ $(document).scroll(function() {
 });
 
 $(document).ready(function() {
+
+  $('.menu-icon').click(function() {
+    $('.navbar ul').toggleClass('nav-expand', 800);
+  });
+
   $('#arrow').click(function() {
-      // console.log('wassup'); 
       $('html, body').animate({
         scrollTop: $("#about-me").offset().top
       }, 800);
   });
 
   $('.navbar-brand').click(function() {
-    // console.log('wassup'); 
     $('html, body').animate({
       scrollTop: 0
     }, 800);
   });
 
   $('.navbar-list:nth-child(1)').click(function() {
-      // console.log('wassup'); 
       $('html, body').animate({
         scrollTop: $("#about-me").offset().top
       }, 800);
   });
 
   $('.navbar-list:nth-child(2)').click(function() {
-    // console.log('wassup'); 
     $('html, body').animate({
       scrollTop: $(".moreDivider").offset().top - $('nav').height()
     }, 800);
   });
 
   $('.navbar-list:nth-child(3)').click(function() {
-    // console.log('wassup'); 
     $('html, body').animate({
       scrollTop: $('.contact h2')[0].offsetTop
     }, 800);
