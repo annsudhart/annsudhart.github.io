@@ -1,4 +1,3 @@
-
 window.addEventListener('scroll', () => {
     let parent = document.getElementById('bkgd-img-splash');
     let children = parent.getElementsByTagName('div');
