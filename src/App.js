@@ -11,17 +11,12 @@ function App() {
       
       <Navbar/>
       <section className="splash">
-        
-        <div id="bkgd-img-splash">
-          <div style={{"backgroundImage": "url('/media/Liquid-Inv1.svg')", "marginTop": "70px"}}></div>
-          <div style={{"backgroundImage": "url('/media/Liquid-Inv2.svg')", "marginTop": "50px"}}></div>
-          <div style={{"backgroundImage": "url('/media/Liquid-Inv3.svg')"}}></div>
-        </div>
         <div className="splash-container w-100 h-100">
           <div className="row">
             <div>
               <h1>Welcome</h1>
               <p>Nice to meet you. My name is Andrea Sudharta.</p>
+              <p className="learn-more">Check out my work!</p>
               <Arrow/>
             </div>
           </div>
@@ -34,7 +29,7 @@ function App() {
         <p>
           Welcome to my webpage! I'm Andrea, a third year student in
           UC San Diego studying Math-CS. My interests lie in the intersection
-          between human computer interaction and data. Currently, I am a data programmer for the UCSD School of Medicine.
+          between <span style={{"color": "rgb(37, 178, 244)"}}>human computer interaction</span> and <span style={{"color": "rgb(75, 75, 255)"}}>data</span>. Currently, I am a data programmer for the UCSD School of Medicine.
         </p>
         <a target="_blank" href="resume.pdf" className="resume-btn">
           View my resume
@@ -55,11 +50,12 @@ function App() {
         <h1>Community Involvement and More</h1>
         <img alt="teamwork" src="/media/community.svg"/>
         <p>
-          I am also striving to improve my leadership skills as a chair of 
-          my college's residence hall council. Furthermore, I am attending 
+          I am also striving to improve my leadership skills, whether if it is
+          as the chair of my college's residence hall council, or as an organizer
+          for SD Hacks, an annual hackathon at UC San Diego. Furthermore, I am attending 
           hackathons and technology related events in order to connect with 
-          the tech world and improve my skills. Last year, I won first place 
-          in HackXX 2018, a hackathon I went to last year.
+          the tech world and improve my skills. I won first place 
+          in HackXX 2018 and won best Google Cloud Hack at Rose Hack 2019.
         </p>
       </section>
       <section className="more">
@@ -78,7 +74,7 @@ function App() {
             </li>
             <li>
               <div className="hexagon"
-                  style={{"backgroundImage": "url('/media/rosehack-logo.png')", "backgroundSize": "130%"}}></div>
+                  style={{"background": "url('/media/rosehack-logo.png'), #a588bf", "backgroundSize": "140%"}}></div>
               Rose Hack 2019
             </li>
             <li>
