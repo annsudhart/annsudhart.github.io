@@ -106,15 +106,21 @@ function App() {
             </a>
           </li>
           <li>
+            <a href="https://www.linkedin.com/in/andrea-sudharta/">
+              <i className="contact-icon fab fa-linkedin-in"  alt="linkedin symbol"></i>
+              LinkedIn: andrea-sudharta
+            </a>
+          </li>
+          <li>
             <a href="https://github.com/annsudhart">
               <i className="contact-icon fab fa-github"  alt="github symbol"></i>
-              Twitter: @SudhartaAndrea
+              GitHub: annsudhart
             </a>
           </li>
           <li>
             <a href="https://twitter.com/SudhartaAndrea">
               <i className="contact-icon fab fa-twitter"  alt="twitter symbol"></i>
-              Github: annsudhart
+              Twitter: @SudhartaAndrea
             </a>
           </li>
         </ul>
