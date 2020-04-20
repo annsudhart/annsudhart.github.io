@@ -29,7 +29,8 @@ function App() {
         <p>
           Welcome to my webpage! I'm Andrea, a third year student in
           UC San Diego studying Math-CS. My interests lie in the intersection
-          between <span style={{"color": "rgb(37, 178, 244)"}}>human computer interaction</span> and <span style={{"color": "rgb(75, 75, 255)"}}>data</span>. Currently, I am a data programmer for the UCSD School of Medicine.
+          between <span style={{"color": "rgb(37, 178, 244)"}}>human computer interaction</span> and <span style={{"color": "rgb(75, 75, 255)"}}>data</span>. 
+          Currently, I am a data programmer for the UCSD School of Medicine and will intern at Verizon Media over the summer.
         </p>
         <a target="_blank" href="resume.pdf" className="resume-btn">
           View my resume
