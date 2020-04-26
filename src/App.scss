@@ -1,3 +1,7 @@
+$blue: #25b2f5;
+$deep-blue: #17a3ff;
+$purple: rgb(75, 75, 255);
+
 html, body {
   margin: 0px;
   height: 100%;
@@ -18,13 +22,6 @@ section {
   padding: 30px 0px;
 }
 
-.splash h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 5em;
-  margin-bottom: 30px;
-  color: black;
-}
-
 p {
   text-align: center;
   align-items: center;
@@ -37,45 +34,42 @@ a {
   color: black;
 }
 
-#about-me h2 {
-  font-size: 2em;
-  color: black;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.splash {
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    margin-bottom: 30px;
+  }
+
+  background-image: url('/media/wave.svg'), url('/media/wave-2.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  padding: 0px;
+  width: 100%;
+  text-align: initial;
+  background-attachment: fixed;
+  z-index: -1;
 }
 
-.App {
-  height: 100%;
-}
-
-.h-100 {
-  height: 100%;
-}
-
-.w-100 {
+.splash-container {
   width: 100%;
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 
 .row {
   flex-grow: 1;
   flex-shrink: 1;
   text-align: center;
-  width: 50%;
+  width: 50vw;
   z-index: 1;
   display: flex;
   justify-content: center;
 }
 
 .splash {
-  padding: 0px;
-  width: 100%;
-  text-align: initial;
-  color: black;
-  background-color: white; background-position: center;
-  background-attachment: fixed;
-  z-index: -1;
 }
 
 .splash p {
@@ -87,7 +81,7 @@ a {
 .learn-more {
   font-size: 1em!important;
   margin: 20px auto;
-  color: rgb(75, 75, 255)!important;
+  color: $purple!important;
   font-weight: bold;
 }
 
@@ -105,37 +99,15 @@ a {
   padding: 90px 0px;
 }
 
-#bkgd-img-splash {
-  height: 750px;
-  width: 100%;
-  position: absolute;
+#about-me h2 {
+  font-size: 2em;
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-#bkgd-img-splash div {
-  position: absolute;
-  top: 0;
-  background-position: center;
-  transform: translateY(0px);
-  height: 750px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.splashBackground {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  background-position: center !important;
-  transform: translateY(0px);
-}
-
-.splashBackground:nth-child(2) {
-  margin-top: 25px;
-}
-
-.splashBackground:nth-child(3) {
-  margin-top: 50px;
+.App {
+  height: 100%;
 }
 
 .about p {
@@ -149,7 +121,7 @@ a {
   display: block;
   padding: 15px 20px;
   font-size: 1.2em;
-  background-color: rgb(75, 75, 255);
+  background-color: $purple;
   color: white;
   margin: 100px auto;
   width: fit-content;
@@ -163,11 +135,11 @@ a {
 
 .resume-btn:hover {
   background-color: transparent;
-  border-top: 2px solid rgb(75, 75, 255);
-  border-right: 2px solid rgb(75, 75, 255);
-  border-bottom: 2px solid rgb(75, 75, 255);
-  border-left: 2px solid rgb(75, 75, 255);
-  color: rgb(75, 75, 255);
+  border-top: 2px solid $purple;
+  border-right: 2px solid $purple;
+  border-bottom: 2px solid $purple;
+  border-left: 2px solid $purple;
+  color: $purple;
   transition: border-right 500ms, border-top 1000ms, border-left 1500ms, border-bottom 2000ms ease, background-color 1s;
 }
 
@@ -188,8 +160,8 @@ a {
 .moreDivider img {
   display: block;
   width: 40%;
-  min-width: 250px;
-  max-width: 500px;
+  max-width:50vw;
+  max-height:30vh;
   padding: 15px;
   margin: 30px auto;
 }
@@ -239,11 +211,15 @@ a {
   -webkit-transform: rotate(-60deg) skewY(30deg);
   -ms-transform: rotate(-60deg) skewY(30deg);
   transform: rotate(-60deg) skewY(30deg);
-  background: #00ced1;
+  background: $blue;
   overflow: hidden;
   visibility: hidden;
   height: 0px;
   margin: 0 0.5%;
+}
+
+#about-me {
+  background-color: $deep-blue;
 }
 
 .more li {
@@ -257,7 +233,7 @@ a {
   -webkit-transform: rotate(-60deg) skewY(30deg);
   -ms-transform: rotate(-60deg) skewY(30deg);
   transform: rotate(-60deg) skewY(30deg);
-  background: #00ced1;
+  background: $blue;
   overflow: hidden;
   visibility: hidden;
   height: 0px;
@@ -271,7 +247,6 @@ a {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(45deg, rgb(107, 41, 176) 0%, rgb(107, 41, 176) 26%,rgb(201, 24, 187) 26%, rgb(201, 24, 187) 45%,rgb(224, 20, 189) 45%, rgb(224, 20, 189) 53%,rgb(83, 45, 173) 53%, rgb(83, 45, 173) 59%,rgb(154, 33, 181) 59%, rgb(154, 33, 181) 62%,rgb(130, 37, 178) 62%, rgb(130, 37, 178) 66%,rgb(177, 28, 184) 66%, rgb(177, 28, 184) 77%,rgb(248, 16, 192) 77%, rgb(248, 16, 192) 100%);
-
   -o-transform: skewY(-30deg) rotate(60deg);
   -moz-transform: skewY(-30deg) rotate(60deg);
   -webkit-transform: skewY(-30deg) rotate(60deg);
@@ -326,7 +301,7 @@ a {
 
 .contact a:hover {
   transition: all 200ms ease;
-  color: #00ced1;
+  color: $blue;
   background-color: white;
 }
 
@@ -334,18 +309,18 @@ a {
   transition: 100ms;
   color: inherit;
   background-color: inherit;
-  border: 2px solid #00ced1;
+  border: 2px solid $blue;
 }
 
 .contact-icon {
   display: flex;
   visibility: visible;
   border: 2px solid transparent;
-  height: 60px;
-  width: 60px;
+  height: 30px;
+  width: 30px;
   border-radius:50%;
-  background-color: #00ced1;
-  margin: 0px 15px;
+  background-color: $blue;
+  margin: 0px 5px;
   transition: 100ms;
   color: inherit;
 }
@@ -437,7 +412,7 @@ a {
 }
 
 i {
-  font-size: 36px;
+  font-size: 18px;
   color: #fff;
 }
 
@@ -447,35 +422,12 @@ i::before {
 
 
 .blue {
-  color: #00ced1!important;
+  color: $blue!important;
   transition: 200ms ease;
 }
 
 .white {
   transition: 200ms ease;
-}
-
-@media only screen and (min-width: 1250px) {
-  .splash h1 {
-      font-size: 8em;
-  }
-  
-  .splash {
-      max-height: 800px;
-  }
-}
-
-@media only screen and (max-width: 1030px) {
-  .more ul {
-      max-width: 400px;
-  }
-
-  .splash {
-      min-height: auto;
-      height: 100%;
-      max-height: 800px;
-  }
-  
 }
 
 @media only screen and (max-width: 720px) {
@@ -520,6 +472,7 @@ i::before {
 
   .splash img {
       padding-top: 15px!important;
+      max-height:30vh;
   }
 
   .twitter-frame {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Arrow.css';
+import './Arrow.scss';
 class Arrow extends React.Component {
     render() {
         return (

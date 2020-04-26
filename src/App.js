@@ -1,17 +1,16 @@
 import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import Arrow from './components/Arrow';
-import Card from './components/Card';
+import './App.scss';
+import Navbar from './components/Navbar/Navbar';
+import Arrow from './components/Arrow/Arrow';
+import Card from './components/Card/Card';
 import {TwitterTimelineEmbed} from 'react-twitter-embed';
 
 function App() {
   return (
     <div className="App">
-      
       <Navbar/>
       <section className="splash">
-        <div className="splash-container w-100 h-100">
+        <div className="splash-container">
           <div className="row">
             <div>
               <h1>Welcome</h1>
@@ -29,7 +28,7 @@ function App() {
         <p>
           Welcome to my webpage! I'm Andrea, a third year student in
           UC San Diego studying Math-CS. My interests lie in the intersection
-          between <span style={{"color": "rgb(37, 178, 244)"}}>human computer interaction</span> and <span style={{"color": "rgb(75, 75, 255)"}}>data</span>. 
+          between <span style={{"color": "rgb(80, 225, 200)"}}>human computer interaction</span> and <span style={{"color": "rgb(75, 75, 255)"}}>data</span>. 
           Currently, I am a data programmer for the UCSD School of Medicine and will intern at Verizon Media over the summer.
         </p>
         <a target="_blank" href="resume.pdf" className="resume-btn">
