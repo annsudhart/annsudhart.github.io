@@ -16,7 +16,7 @@ Planning on adding Less CSS preprocessor and cleaning up the design of the websi
 
 ### Repository structure
 
-The actual code used to make the website is on brance `source`.
+The actual code used to make the website is on branch `source`.
 
 `public`, `src`, are folders containing the public assets and the ReactJS source code used to build the website. `.babelrc`, `.gitignore`, `manifest.json`, `package.json`, `package-lock.json`, and `yarn.lock` are also configuration files used when building this website. 
 
