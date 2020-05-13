@@ -1,6 +1,9 @@
 $blue: #25b2f5;
 $deep-blue: #17a3ff;
-$purple: rgb(75, 75, 255);
+$soft-purple: #8080ed;
+$medium-purple: #6c6cf4;
+$purple: #4b4bff;
+$off-black: #262626;
 
 html, body {
   margin: 0px;
@@ -9,6 +12,7 @@ html, body {
   max-width: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
+  background: linear-gradient(0deg, $blue 54%, $medium-purple 75%, black 100%);
 }
 
 #root {
@@ -43,6 +47,7 @@ a {
 
   background-image: url('/media/wave.svg'), url('/media/wave-2.svg');
   background-repeat: no-repeat;
+  background-color: white;
   background-position: bottom;
   background-size: 100%;
   padding: 0px;
@@ -67,9 +72,6 @@ a {
   z-index: 1;
   display: flex;
   justify-content: center;
-}
-
-.splash {
 }
 
 .splash p {
@@ -143,11 +145,17 @@ a {
   transition: border-right 500ms, border-top 1000ms, border-left 1500ms, border-bottom 2000ms ease, background-color 1s;
 }
 
+#about-me {
+  background-color: $deep-blue;
+  background: linear-gradient(0deg, $soft-purple 0%, $deep-blue 100%);
+}
+
 .moreDivider {
   min-height: initial;
   height: 100%;
   background-attachment: fixed;
-  background-color: #ffffff;
+  background-color: $soft-purple;
+  background: linear-gradient(0deg, $medium-purple 0%, $soft-purple 100%);
 }
 
 .moreDivider h1 {
@@ -168,6 +176,8 @@ a {
 
 .more {
   height: auto;
+  background-color: $purple;
+  background: linear-gradient(0deg, $purple 0%, $medium-purple 100%);
 }
 
 .more img {
@@ -218,10 +228,6 @@ a {
   margin: 0 0.5%;
 }
 
-#about-me {
-  background-color: $deep-blue;
-}
-
 .more li {
   list-style-type: none;
   position: relative;
@@ -262,12 +268,17 @@ a {
   visibility: visible;
 }
 
+.section-divider {
+  background-color: $off-black;
+  fill: currentColor;
+}
+
 .contact {
   height: 50%;
   min-height: 0px;
   max-height: 300px;
-  background-color: white;
-  color: black;
+  background-color: $off-black;
+  color: white;
 }
 
 .contact h2 {
@@ -302,11 +313,10 @@ a {
 .contact a:hover {
   transition: all 200ms ease;
   color: $blue;
-  background-color: white;
+  background-color: transparent;
 }
 
 .contact-icon:hover {
-  transition: 100ms;
   color: inherit;
   background-color: inherit;
   border: 2px solid $blue;
@@ -321,7 +331,6 @@ a {
   border-radius:50%;
   background-color: $blue;
   margin: 0px 5px;
-  transition: 100ms;
   color: inherit;
 }
 
@@ -353,9 +362,7 @@ a {
 }
 
 #any-a {
-  color: rgba(255, 255, 255, 0);
   background-image: url('/media/any-a.png');
-  transition: all 300ms ease-out;
 }
 
 #any-a:hover {
@@ -418,16 +425,6 @@ i {
 
 i::before {
   margin: auto;
-}
-
-
-.blue {
-  color: $blue!important;
-  transition: 200ms ease;
-}
-
-.white {
-  transition: 200ms ease;
 }
 
 @media only screen and (max-width: 720px) {

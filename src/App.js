@@ -95,6 +95,18 @@ function App() {
         <script async src="https://platform.twitter.com/widgets.js" 
                 charSet="utf-8"></script>
       </section>
+      <div className="section-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <defs>
+            <linearGradient id="contact-gradient" gradientTransform="rotate(90)">
+              <stop offset="0%"  stopColor="#4b4bff" />
+              <stop offset="30%" stopColor="#9933ff" />
+              <stop offset="100%" stopColor="#ff66cc" />
+            </linearGradient>
+          </defs>
+          <path fill="url('#contact-gradient')" fillOpacity="1" d="M0,64L30,80C60,96,120,128,180,154.7C240,181,300,203,360,208C420,213,480,203,540,176C600,149,660,107,720,112C780,117,840,171,900,213.3C960,256,1020,288,1080,298.7C1140,309,1200,299,1260,256C1320,213,1380,139,1410,101.3L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+        </svg>
+      </div>
       <section id="contact" className="contact">
         <h2>Contact</h2>
         <ul>
