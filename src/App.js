@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Navbar/>
         <Switch>
-          <Route path="/casestudy/politician-tweet" render={CaseStudy}/>
+          <Route path="/case-study/politician-tweet" render={CaseStudy}/>
           <Route exact path="/" render={Home}></Route>
           <Route render={Page404}/>
         </Switch>
