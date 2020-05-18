@@ -1,7 +1,7 @@
 
 # Case Study Name here
 
-`<img src="/media/truther-tweet.png"/>`
+![splash image](https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/consistency-example.png?raw=true)
 
 ## Overview/TLDR
 
@@ -9,7 +9,7 @@ Politicians often get a reputation for being corrupt and shady liars. But how mu
 
 My role in this project was compiling the Twitter URLs to scrape from and to combine the data and research from all of my partners into one document. I also helped to improve and create some of the data visualizations to make them easier to read and gain insights from.
 ## Background
-`<img src={placeholderurl}/>`
+![Pew Research on Trustworthiness Graph](https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/politician-trust-graph-pew.png?raw=true)
 The US government relies on its Congress to not only check the powers of the president and other branches of government but also to draft legislation that has an impact on our lives. With such important duties, it is disappointing to see that politicians are known to be one of the least trusted professions out there.
 
 Fortunately, we have a way to directly engage with these politicians and evaluate for ourselves if these Congress members are performing a satisfactory job or not. With our primary sources of information transitioning from the newspaper, to the television, to now social media, politicians have increased their presence on Twitter to speak to their constituents and gain their support. So it follows that by using Twitter, we can see how they vote and what they believe in, and compare those with what we believe is right. This fact gives us a valuable source of data for our research.
@@ -51,6 +51,8 @@ The second part of our data collection was to scrape data off of Twitter. Since 
 
 ### Findings
 First, we perform sentiment analysis on the tweets we mined. We searched for keywords in the tweets that would indicate approval or disapproval for an issue. If those keywords do not exist, we utilize Google’s NLP Text Sentiment Analysis Cloud Tool to categorize the data into tweets that are for an issue or against it. Overall, this would be use to give a mean sentiment score between -1 (negative) and 1 (positive), and depending on the bill, if keywords do not give a clear indication on a view expressed in a tweet, this number will be multiplied by -1 to capture whether a Congressperson would vote for or against a bill. The mean score will be rounded to 1, 0, or -1 depending on whether the mean falls into the range (0.1, 1.0], [-0.1, 0.1], or [-1.0, 0.1).
+
+![Sentiment Analysis Code](https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/sentiment-analysis-code.png?raw=true)
 
 This step was particularly difficult to do since the NLP tool could only estimate the positivity and negativity of a tweet, and since many Congressmen and Congresswomen’s tweets on Twitter are of a negative tone, discerning their view on the topic was an interesting challenge albeit a critical limitation on the project. In fact, deducing the sentiment in regards to whether or not they approve or disapprove of a bill is a Natural Language Processing Task that leading Deep Learning Researchers are conducting their research on. The best we could do was searching for keywords/hashtags that would indicate the position expressed in a tweet; nevertheless, a stronger machine learning model or the addition of more keywords could help.
 
