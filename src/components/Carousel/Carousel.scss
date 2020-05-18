@@ -1,0 +1,31 @@
+.carousel {
+    
+    display: flex;
+    margin: auto;
+    width: fit-content;
+
+    img {
+        max-width: 330px;
+        max-height: 230px;
+    }
+
+    .arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightblue;
+        width: 30px;
+    } 
+
+    .arrow:active {
+        background-color: deepskyblue;
+    }
+
+    .arrow::selection {
+        background: transparent;
+    }
+
+    .arrow::-moz-selection {
+        background: transparent;
+    }
+}

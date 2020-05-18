@@ -1,4 +1,12 @@
 ## Final Result
+
+![Example of Politician Twitter Consistency](https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/consistency-example.png?raw=true)
+
+Main takeaways:
+- The data shows politicians are on average not too consistent with their votes and their tweets, and this tends to be more true for Democrats. 
+- Our results should be taken with a grain of salt because of possible inaccuracies in sentiment analysis in determining a position held in a Tweet.
+- Many things can be done to improve this research study, as stated below in detail.
+
 ### Ethics/Privacy
 In order to web scrape Twitter for the tweet history of each congressman/woman, a Twitter Developer Account had to be requested from the company, and so we had permission to collect the Twitter data we needed to create the dataset, albeit with a restriction in the number of page requests made hourly. This restriction was circumvented with a sleep function when making the API calls. As for the GovTrack datasets, the unrestricted CSV files containing the votes on a bill from each House of Representatives are public records (since the transparency of representatives voting record is vital for maintaining a representative democracy) and no permission was needed.
 

@@ -8,6 +8,7 @@ $bg-color-hover: rgba(37, 178, 244, 0.7);
     flex-flow: row nowrap;
     position: fixed;
     background-color: $bg-color;
+    top: 0px;
     z-index: 2;
 }
 
