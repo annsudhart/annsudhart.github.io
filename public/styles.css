@@ -231,18 +231,21 @@ svg#hamburger-icon {
   
   
 .top {
+    animation-duration: 100ms;
     -webkit-animation-duration: 100ms;
     z-index: 900;
 }
   
 .middle {
     top: 45px;
+    animation-duration: 250ms;
     -webkit-animation-duration: 250ms;
     z-index: 900;
 }
   
 .bottom {
     top: 65px;
+    animation-duration: 250ms;
     -webkit-animation-duration: 250ms;
     transition: opacity 350ms linear;
     z-index: 900;
