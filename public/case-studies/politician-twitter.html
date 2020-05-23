@@ -11,12 +11,36 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
             integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
             crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" 
-            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles.css"/>
-        <script src="../scripts.js"></script>
+        <script src="../case-studies.js"></script>
     </head>
     <body>
+        <a class="animated hamburger bounceInRight">
+            <div class="ham top white"></div>
+            <div class="ham middle white"></div>
+            <div class="ham bottom white"></div>
+            <div id="links">
+              <ul id="internal-link">
+                <li><a href="#title">Top</a></li>
+                <li><a href="#overview-tldr">Overview/TLDR</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#previous-research">Previous Research</a></li>
+                <li><a href="#problem-statement-research-question">Problem Statement/Research Question</li>
+                <li><a href="#hypothesis">Hypothesis</a></li>
+                <li><a href="#data-analysis-and-gathering">Data Analysis and Gathering</a></li>
+                <li><a href="#findings">Findings</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#references">References</a></li>
+              </ul>
+              <div class="line"></div>
+              <ul id="external-link">
+                  <li><a href="https://annsudhart.github.io">Home</a></li>
+                <li><a href="./resume.pdf">Online Resume</a></li>
+                <li><a href="https://github.com/annsudhart">GitHub</a></li>
+              </ul>
+            </div>
+          </a>
         <nav class="navbar navbar-expand" href="">
             <a href="https://annsudhart.github.io" class="navbar-brand navbar-item">Andrea Sudharta</a>
             <div class="menu-icon navbar-item">
@@ -35,14 +59,18 @@
             </ul>
         </nav>
         <div class="case-study">
-            <h1 id="politician-twitter-study">Politician Twitter Study</h1>
+            <h1 id="title">Politician Twitter Study</h1>
             <p><img src="./images/twitter-splash-img.png" alt="splash image"></p>
             <h2 id="overview-tldr">Overview/TLDR</h2>
             <p>Politicians often get a reputation for being corrupt and shady liars. But how much is that true, and how much of it is related to political party lines? With a group of nine other students, I set out to test American Congressmembers&#39; trustworthiness by comparing whether the opinions and words politicians speak match their voting record. To do this, we gathered voting data on several Congressmen and Congresswomen to understand voting patterns and honesty in politicians. Then, we scanned the Twitter accounts of Congress members, taking key words and hashtags for hot topics, and compared their words against their voting patterns using sentiment analysis. Scores are then assigned to these politicians based on their “trustworthiness” - a representation of their viewpoint consistency, and we aggregated these scores in various ways to describe the two parties’ relationship with honesty.</p>
             <p>My role in this project was compiling the Twitter URLs to scrape from and to combine the data and research from all of my partners into one document. I also helped to improve and create some of the data visualizations to make them easier to read and gain insights from.</p>
             <h2 id="background">Background</h2>
-            <p><img src="https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/politician-trust-graph-pew.png?raw=true" alt="Pew Research on Trustworthiness Graph">
-            The US government relies on its Congress to not only check the powers of the president and other branches of government but also to draft legislation that has an impact on our lives. With such important duties, it is disappointing to see that politicians are known to be one of the least trusted professions out there.</p>
+            <p>
+                <img src="https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/politician-trust-graph-pew.png?raw=true" alt="Pew Research on Trustworthiness Graph">
+            </p>
+            <p>
+                The US government relies on its Congress to not only check the powers of the president and other branches of government but also to draft legislation that has an impact on our lives. With such important duties, it is disappointing to see that politicians are known to be one of the least trusted professions out there.
+            </p>
             <p>Fortunately, we have a way to directly engage with these politicians and evaluate for ourselves if these Congress members are performing a satisfactory job or not. With our primary sources of information transitioning from the newspaper, to the television, to now social media, politicians have increased their presence on Twitter to speak to their constituents and gain their support. So it follows that by using Twitter, we can see how they vote and what they believe in, and compare those with what we believe is right. This fact gives us a valuable source of data for our research.</p>
             <h2 id="previous-research">Previous Research</h2>
             <p>There has been other research that sought to explore this topic. One study gave us the groundwork for studying political leanings based on language. In this study, data science and neural networking were leveraged to predict how Republicans or Democrats would vote on each bill. It looked at the language used by bills and party ideology, then categorized a bill using a sentiment analysis on keyword vectors against a partisan sponsor vector. The study’s model was able to predict 86% of votes correctly in the 2005–2012 test set--a level of accuracy several percentage points better than previous state-of-the-art machine learning approaches.</p>
@@ -59,18 +87,18 @@
             <p>The first part of our data collection and cleaning was to get information on Congress members’ voting activity.</p>
             <p>There is a website called GovTrack that records the votes made by Congress for different pieces of legislation. The ones we take into consideration are:</p>
             <ul>
-            <li><a href="https://www.govtrack.us/congress/votes/116-2019/h167">H.R. 16644: Save the Internet Act of 2019</a>. This bill deals with Net Neutrality and restoring the open internet order of the Federal Communications Commision. Relevant hashtags: #SaveTheInternet and #NetNeutrality.</li>
-            <li><a href="https://www.govtrack.us/congress/votes/116-2019/h146">H.Res 271: Condemning the Trump Administration’s Legal Campaign to Take Away Americans’ Health Care</a> , which focuses on President Trump and the Affordable Care Act.</li>
-            <li><a href="https://www.govtrack.us/congress/votes/116-2019/h134">H.R. 7: Paycheck Fairness Act</a>, which amends the Fair Labor Standards Act of 1938 to remedy the discrimination, in terms of wages, on the basis of sex. Relevant hashtags: #EqualPay, #EqualRightsAmmendment, #ERA, #women, #EqualRights, #GenderInequality.</li>
-            <li><a href="https://www.govtrack.us/congress/votes/116-2019/h118">H.R. 1: For the People Act of 2019</a>, which was a vote to “expand Americans’ access to the ballot box, reduce the influence of big money in politics, and strengthen ethics rules for public servants, and for other purposes”. Relevant hashtags: #VotingRights, #ElectionIntegrity,#RiggedElections, #ForThePeople.</li>
-            <li><a href="https://www.govtrack.us/congress/votes/116-2019/h91">H.Res. 145: Requiring a background check for every firearm sale</a>. This bill refers to the gun violence that has become quite ubiquitous in the country. This is a polarizing issue, where Congress members have been quite vocal in their opinions. Relevant hashtags: #GunControl, #2ndAmmendment, #NoGunControl, and #GunViolence.</li>
-            <li><a href="https://www.govtrack.us/congress/votes/116-2019/h153">S.J.Res. 7: A joint resolution to direct the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress.</a>. This bill was a vote on whether or not to withdraw troops from the proxy war in Yemen. Tweets containing the references to Yemen will be extracted and used for analysis.</li>
-            <li><a href="https://www.govtrack.us/congress/votes/116-2019/h156">H.R. 1585: Violence Against Women Reauthorization Act of 2019</a>. Tweets in regards to this topic will be found with the key words of this bill.</li>
-            <li><a href="&#39;https://www.govtrack.us/congress/votes/116-2019/h127&#39;">H.J.Res. 46: Relating to a national emergency declared by the President on February 15, 2019.</a> This bill condemns the national emergency Trump declared in January of 2019. Tweets mentioning Trump and the national security will be mined from Twitter.</li>
+                <li><a href="https://www.govtrack.us/congress/votes/116-2019/h167">H.R. 16644: Save the Internet Act of 2019</a>. This bill deals with Net Neutrality and restoring the open internet order of the Federal Communications Commision. Relevant hashtags: #SaveTheInternet and #NetNeutrality.</li>
+                <li><a href="https://www.govtrack.us/congress/votes/116-2019/h146">H.Res 271: Condemning the Trump Administration’s Legal Campaign to Take Away Americans’ Health Care</a> , which focuses on President Trump and the Affordable Care Act.</li>
+                <li><a href="https://www.govtrack.us/congress/votes/116-2019/h134">H.R. 7: Paycheck Fairness Act</a>, which amends the Fair Labor Standards Act of 1938 to remedy the discrimination, in terms of wages, on the basis of sex. Relevant hashtags: #EqualPay, #EqualRightsAmmendment, #ERA, #women, #EqualRights, #GenderInequality.</li>
+                <li><a href="https://www.govtrack.us/congress/votes/116-2019/h118">H.R. 1: For the People Act of 2019</a>, which was a vote to “expand Americans’ access to the ballot box, reduce the influence of big money in politics, and strengthen ethics rules for public servants, and for other purposes”. Relevant hashtags: #VotingRights, #ElectionIntegrity,#RiggedElections, #ForThePeople.</li>
+                <li><a href="https://www.govtrack.us/congress/votes/116-2019/h91">H.Res. 145: Requiring a background check for every firearm sale</a>. This bill refers to the gun violence that has become quite ubiquitous in the country. This is a polarizing issue, where Congress members have been quite vocal in their opinions. Relevant hashtags: #GunControl, #2ndAmmendment, #NoGunControl, and #GunViolence.</li>
+                <li><a href="https://www.govtrack.us/congress/votes/116-2019/h153">S.J.Res. 7: A joint resolution to direct the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress.</a>. This bill was a vote on whether or not to withdraw troops from the proxy war in Yemen. Tweets containing the references to Yemen will be extracted and used for analysis.</li>
+                <li><a href="https://www.govtrack.us/congress/votes/116-2019/h156">H.R. 1585: Violence Against Women Reauthorization Act of 2019</a>. Tweets in regards to this topic will be found with the key words of this bill.</li>
+                <li><a href="&#39;https://www.govtrack.us/congress/votes/116-2019/h127&#39;">H.J.Res. 46: Relating to a national emergency declared by the President on February 15, 2019.</a> This bill condemns the national emergency Trump declared in January of 2019. Tweets mentioning Trump and the national security will be mined from Twitter.</li>
             </ul>
             <p>Each of these links go to a webpage with information on the votes and contains a link to a CSV with data on what each Congress member’s vote on the bill was and the Congress member’s state, district, name, and party. Based on this data, we simplify the data by creating a CSV in which each entry contains the information of a Congress member and their vote on a specific bill. In this step, concern was raised on whether these cleaning steps were properly done since many representatives did not vote on any of the bills. After careful inspection, it was deducted that many representatives were not voting on any of these bills, which is particularly interesting since the congress people were selected by how active and popular they are on Twitter.</p>
             <p>The second part of our data collection was to scrape data off of Twitter. Since we chose to answer our data science question by selecting eight bills that were voted on in the 116th Congress, we filtered each representative’s Twitter history by only selecting Tweets that discerned one of the eight bills. This was executed by checking whether or not the Tweet contained key words from the bill or a particular hashtag, demonstrating support for or against the bill. The last step taken in cleaning this data was the removal of any non-English words in the Tweet, which was due to the Tweepy library failing to remove all HTML code in the text part of the tweet. Python’s string function: <code>isalpha()</code>was used to remove these invalid parts of the Tweet text.</p>
-            <h3 id="findings">Findings</h3>
+            <h2 id="findings">Findings</h3>
             <p>First, we perform sentiment analysis on the tweets we mined. We searched for keywords in the tweets that would indicate approval or disapproval for an issue. If those keywords do not exist, we utilize Google’s NLP Text Sentiment Analysis Cloud Tool to categorize the data into tweets that are for an issue or against it. Overall, this would be use to give a mean sentiment score between -1 (negative) and 1 (positive), and depending on the bill, if keywords do not give a clear indication on a view expressed in a tweet, this number will be multiplied by -1 to capture whether a Congressperson would vote for or against a bill. The mean score will be rounded to 1, 0, or -1 depending on whether the mean falls into the range (0.1, 1.0], [-0.1, 0.1], or [-1.0, 0.1).</p>
             <p><img src="https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/sentiment-analysis-code.png?raw=true" alt="Sentiment Analysis Code"></p>
             <p>This step was particularly difficult to do since the NLP tool could only estimate the positivity and negativity of a tweet, and since many Congressmen and Congresswomen’s tweets on Twitter are of a negative tone, discerning their view on the topic was an interesting challenge albeit a critical limitation on the project. In fact, deducing the sentiment in regards to whether or not they approve or disapprove of a bill is a Natural Language Processing Task that leading Deep Learning Researchers are conducting their research on. The best we could do was searching for keywords/hashtags that would indicate the position expressed in a tweet; nevertheless, a stronger machine learning model or the addition of more keywords could help.</p>
@@ -78,10 +106,15 @@
             <p>The histograms show there are more people who tweet about Paycheck Fairness, Health care, and the For the People Act, and how there are less tweets about the Save the Internet Act overall (additionally, notice the higher ratio of tweets of Democrats to Republicans). </p>
             <p>We can see outliers in each of these histograms, and the names of the outlier politicians can be found in the Jupyter Notebook; several things that can be done to extend this analysis are to see if </p>
             <ul>
-            <li>there are any politicians that tend to tweet more often than others, or not often at all</li>
-            <li>the outliers tend to follow party lines (eg do Democrats tend to be these outliers in certain issues?)</li>
-            <li>the above, but for those that tweet less/not at all</li>
+                <li>there are any politicians that tend to tweet more often than others, or not often at all</li>
+                <li>the outliers tend to follow party lines (eg do Democrats tend to be these outliers in certain issues?)</li>
+                <li>the above, but for those that tweet less/not at all</li>
             </ul>
+            <div class="carousel">
+                <div class="arrow" onClick=flipLeft()>◀</div>
+                <img src="./images/tweets-per-bill-1.png"/>
+                <div class="arrow" onClick=flipRight()>▶</div>
+            </div>
             <p>Furthermore, the graph below shows that Democrats are more prolific tweeters than Republicans in general across all topics. This could be due to a gap in the demographics of Republican and Democrat politicians, as Democrats tend to be younger and have younger followers than Republicans.</p>
             <p><img src="https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/tweet-count-party.png?raw=true" alt="Democrats Tweet more than Republicans Per Bill Chart"></p>
             <p>So now we get to answering the question we had at the beginning- how do these tweets relate to the voting patterns of these politicians? After loading the CSVs with votes for each politician, we compare whether their sentiment scores were positive or negative with whether they voted yes or no on an issue to create a ‘consistency score’.</p>
@@ -94,9 +127,9 @@
             <p><img src="https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/consistency-example.png?raw=true" alt="Example of Politician Twitter Consistency"></p>
             <p>Main takeaways:</p>
             <ul>
-            <li>The data shows politicians are on average not too consistent with their votes and their tweets, and this tends to be more true for Democrats. </li>
-            <li>Our results should be taken with a grain of salt because of possible inaccuracies in sentiment analysis in determining a position held in a Tweet.</li>
-            <li>Many things can be done to improve this research study, as stated below in detail.</li>
+                <li>The data shows politicians are on average not too consistent with their votes and their tweets, and this tends to be more true for Democrats. </li>
+                <li>Our results should be taken with a grain of salt because of possible inaccuracies in sentiment analysis in determining a position held in a Tweet.</li>
+                <li>Many things can be done to improve this research study, as stated below in detail.</li>
             </ul>
             <h3 id="ethics-privacy">Ethics/Privacy</h3>
             <p>In order to web scrape Twitter for the tweet history of each congressman/woman, a Twitter Developer Account had to be requested from the company, and so we had permission to collect the Twitter data we needed to create the dataset, albeit with a restriction in the number of page requests made hourly. This restriction was circumvented with a sleep function when making the API calls. As for the GovTrack datasets, the unrestricted CSV files containing the votes on a bill from each House of Representatives are public records (since the transparency of representatives voting record is vital for maintaining a representative democracy) and no permission was needed.</p>
@@ -110,9 +143,9 @@
             <h3 id="possible-improvements-and-reflections">Possible Improvements and Reflections</h3>
             <p>Revisiting this project a year after its conclusion, there are many steps that can be taken to improve this. </p>
             <ul>
-            <li>Fine-tune the sentiment analysis by adding more relevant keywords that could better determine the sentiment of the politician on an issue. Perhaps studying selected tweets and the output given by our sentiment analysis could fix this.</li>
-            <li>Further discuss the visualizations we made. This is actually a current work in progress as I revisit this project. We made plenty of visualizations, but I believe more could be discussed about the stories the visualizations make - the findings from the graphs we made were stated, but it would be interesting to explore the meaning behind those findings.</li>
-            <li>Enhance the study with a statistically-oriented discussion. We discussed a null and alternative hypothesis, but after taking more statistics classes, it would be interesting to see if an actual two-proportion z-test can be performed on the mean consistency levels along party lines.</li>
+                <li>Fine-tune the sentiment analysis by adding more relevant keywords that could better determine the sentiment of the politician on an issue. Perhaps studying selected tweets and the output given by our sentiment analysis could fix this.</li>
+                <li>Further discuss the visualizations we made. This is actually a current work in progress as I revisit this project. We made plenty of visualizations, but I believe more could be discussed about the stories the visualizations make - the findings from the graphs we made were stated, but it would be interesting to explore the meaning behind those findings.</li>
+                <li>Enhance the study with a statistically-oriented discussion. We discussed a null and alternative hypothesis, but after taking more statistics classes, it would be interesting to see if an actual two-proportion z-test can be performed on the mean consistency levels along party lines.</li>
             </ul>
             <p>Exploring sentiment analysis and web scraping with this project as a beginner with a large group, pulling off a study like this was a challenge, but ultimately I learned a lot about the applications of this area of data science.</p>
             <h2 id="references">References</h2>
