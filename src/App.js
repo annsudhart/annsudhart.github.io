@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Navbar/>
         <Switch>
-          <Route path="/case-study/politician-tweet" render={CaseStudy}/>
+          <Route exact path="/case-study/politician-tweet" render={CaseStudy}/>
           <Route exact path="/" render={Home}></Route>
           <Route render={Page404}/>
         </Switch>

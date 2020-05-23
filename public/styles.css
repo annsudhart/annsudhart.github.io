@@ -1,0 +1,268 @@
+* {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    overflow-x: hidden;
+}
+
+#root {
+    height: 100%;
+}
+
+p {
+    text-align: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+    overflow-wrap: break-word;
+}
+
+.navbar {
+    width: 100%;
+    box-shadow: 1px 1px 10px 0px lightgray;
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    z-index: 2;
+}
+
+.navbar-brand {
+    display: flex;
+    padding: 15px 20px;
+    color: black;
+    background-color: rgba(37, 178, 244, 0.7);
+}
+
+.navbar-list {
+    display: flex;
+    padding: 15px 20px;
+    transition: color 200ms ease, background-color 200ms ease;
+}
+
+.navbar-item a:visited, .navbar-item:visited {
+    color: initial;
+}
+
+.navbar-item:hover {
+    cursor: pointer;
+    background-color: rgba(37, 178, 244, 0.7);
+    transition: color 100ms ease;
+}
+
+.navbar-item a, .navbar-item {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.menu-icon {
+    margin: 8px;
+    margin-left: auto;
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 33px;
+}
+
+svg#hamburger-icon:hover, svg.nav-expand {
+    stroke: #261494;
+    transition: stroke 200ms ease-in;
+    animation: trace 1s ease-in-out 1;
+}
+
+.selected {
+    background-color: rgba(37, 178, 244, 0.7);
+}
+
+.nav-expand {
+    display: block!important;
+    margin: 0px;
+    padding: 0px;
+}
+
+@keyframes trace {
+    25% {
+        border-top: 2px solid #261494;
+    }
+
+    50% {
+        border-top: 2px solid #261494;
+        border-right: 2px solid #261494;
+    }
+
+    75% {
+        border-top: 2px solid #261494;
+        border-right: 2px solid #261494;
+        border-bottom: 2px solid #261494;
+    }
+
+    100% {
+        border-top: 2px solid #261494;
+        border-right: 2px solid #261494;
+        border-bottom: 2px solid #261494;
+        border-left: 2px solid #261494;
+    }
+}
+
+svg#hamburger-icon {
+    width: 25px;
+    stroke: black;
+    stroke-width: 4px;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 8px;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-item {
+        background-color: white;
+    }
+    .navbar ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+}
+
+
+.case-study {
+    background-color: white;
+    min-height: 100vh;
+    width: 70vw;
+    padding: 0 10vw;
+    padding-top: 50px;
+}
+
+.case-study p {
+    margin: 1em auto;
+    text-align: left;
+    width: fit-content;
+}
+
+.case-study img {
+    max-width: 70vw;
+    max-height: 60vh;
+    margin: auto;
+}
+
+.case-study ul {
+    display: block;
+}
+
+.case-study li {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.case-study a:hover {
+    color: rgba(37, 178, 244, 1);
+}
+
+.section-divider {
+    background-color: #262626;
+    fill: currentColor;
+}
+  
+.contact {
+    height: 50%;
+    min-height: 0px;
+    max-height: 300px;
+    width: 100vw;
+    background-color: #262626;
+    color: white;
+}
+  
+.contact h2 {
+    font-size: 2em;
+    margin: auto;
+    width: fit-content;
+}
+  
+.contact p {
+    display: block;
+    font-size: 1.2em;
+}
+  
+.contact ul {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 30px 0px;
+}
+  
+.contact li {
+    list-style: none;
+    visibility: hidden;
+    font-size: 0px;
+}
+  
+.contact a {
+    text-decoration: none;
+    color: white;
+    width: none;
+    transition: 100ms;
+}
+  
+.contact a:hover {
+    transition: all 200ms ease;
+    color: $blue;
+    background-color: transparent;
+}
+  
+.contact-icon:hover {
+    color: inherit;
+    background-color: inherit;
+    border: 2px solid $blue;
+}
+  
+.contact-icon {
+    display: flex;
+    visibility: visible;
+    border: 2px solid transparent;
+    height: 30px;
+    width: 30px;
+    border-radius:50%;
+    background-color: #25b2f5;
+    margin: 0px 5px;
+    color: inherit;
+}
+  
+i {
+    font-size: 18px;
+    color: #fff;
+}
+  
+  i::before {
+    margin: auto;
+}
