@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
@@ -9,14 +9,14 @@ import Page404 from './pages/404/404';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <Navbar/>
         <Switch>
           <Route exact path="/case-study/politician-tweet" render={CaseStudy}/>
           <Route exact path="/" render={Home}></Route>
           <Route render={Page404}/>
         </Switch>
-      </Router>      
+      </BrowserRouter>      
       <section id="contact" className="contact">
             <h2>Contact</h2>
             <ul>
