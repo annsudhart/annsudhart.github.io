@@ -22,7 +22,6 @@ p {
     text-align: center;
     align-items: center;
     font-size: 1.3em;
-    width: 70%;
     margin: 0 auto;
 }
 
@@ -207,6 +206,7 @@ svg#hamburger-icon {
     font-size: 2em;
     margin: auto;
     width: fit-content;
+    width: -moz-fit-content;
 }
   
 .contact p {
@@ -236,14 +236,14 @@ svg#hamburger-icon {
   
 .contact a:hover {
     transition: all 200ms ease;
-    color: $blue;
+    color: #25b2f5;
     background-color: transparent;
 }
   
 .contact-icon:hover {
     color: inherit;
     background-color: inherit;
-    border: 2px solid $blue;
+    border: 2px solid #25b2f5;
 }
   
 .contact-icon {
