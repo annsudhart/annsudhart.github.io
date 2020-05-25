@@ -1,7 +1,6 @@
-
-# Case Study Name here
-
 ![splash image](https://annsudhart.github.io/case-studies/images/twitter-splash-img.png)
+
+# Politician Twitter Study
 
 ## Overview/TLDR
 
