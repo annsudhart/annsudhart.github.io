@@ -1,7 +1,6 @@
+![splash image](https://annsudhart.github.io/case-studies/images/twitter-splash-img.png)
 
-# Case Study Name here
-
-![splash image](https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/consistency-example.png?raw=true)
+# Politician Twitter Study
 
 ## Overview/TLDR
 
@@ -10,6 +9,7 @@ Politicians often get a reputation for being corrupt and shady liars. But how mu
 My role in this project was compiling the Twitter URLs to scrape from and to combine the data and research from all of my partners into one document. I also helped to improve and create some of the data visualizations to make them easier to read and gain insights from.
 ## Background
 ![Pew Research on Trustworthiness Graph](https://github.com/annsudhart/annsudhart.github.io/blob/source/public/case-studies/images/politician-trust-graph-pew.png?raw=true)
+
 The US government relies on its Congress to not only check the powers of the president and other branches of government but also to draft legislation that has an impact on our lives. With such important duties, it is disappointing to see that politicians are known to be one of the least trusted professions out there.
 
 Fortunately, we have a way to directly engage with these politicians and evaluate for ourselves if these Congress members are performing a satisfactory job or not. With our primary sources of information transitioning from the newspaper, to the television, to now social media, politicians have increased their presence on Twitter to speak to their constituents and gain their support. So it follows that by using Twitter, we can see how they vote and what they believe in, and compare those with what we believe is right. This fact gives us a valuable source of data for our research.
@@ -39,7 +39,7 @@ There is a website called GovTrack that records the votes made by Congress for d
 -  [H.R. 16644: Save the Internet Act of 2019](https://www.govtrack.us/congress/votes/116-2019/h167). This bill deals with Net Neutrality and restoring the open internet order of the Federal Communications Commision. Relevant hashtags: #SaveTheInternet and #NetNeutrality.
 -  [H.Res 271: Condemning the Trump Administration’s Legal Campaign to Take Away Americans’ Health Care](https://www.govtrack.us/congress/votes/116-2019/h146) , which focuses on President Trump and the Affordable Care Act.
 -  [H.R. 7: Paycheck Fairness Act](https://www.govtrack.us/congress/votes/116-2019/h134), which amends the Fair Labor Standards Act of 1938 to remedy the discrimination, in terms of wages, on the basis of sex. Relevant hashtags: #EqualPay, #EqualRightsAmmendment, #ERA, #women, #EqualRights, #GenderInequality.
--  [H.R. 1: For the People Act of 2019](https://www.govtrack.us/congress/votes/116-2019/h118), which was a vote to “expand Americans’ access to the ballot box, reduce the influence of big money in politics, and strengthen ethics rules for public servants, and for other purposes”. Relevant hashtags: #VotingRights, #ElectionIntegrity,#RiggedElections, #ForThePeople.
+-  [H.R. 1: For the People Act of 2019](https://www.govtrack.us/congress/votes/116-2019/h118), which was a vote to “expand Americans’ access to the ballot box, reduce the influence of big money in politics, and strengthen ethics rules for public servants, and for other purposes”. Relevant hashtags: #VotingRights, #ElectionIntegrity, #RiggedElections, #ForThePeople.
 -  [H.Res. 145: Requiring a background check for every firearm sale](https://www.govtrack.us/congress/votes/116-2019/h91). This bill refers to the gun violence that has become quite ubiquitous in the country. This is a polarizing issue, where Congress members have been quite vocal in their opinions. Relevant hashtags: #GunControl, #2ndAmmendment, #NoGunControl, and #GunViolence.
 -  [S.J.Res. 7: A joint resolution to direct the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress.](https://www.govtrack.us/congress/votes/116-2019/h153). This bill was a vote on whether or not to withdraw troops from the proxy war in Yemen. Tweets containing the references to Yemen will be extracted and used for analysis.
 -  [H.R. 1585: Violence Against Women Reauthorization Act of 2019](https://www.govtrack.us/congress/votes/116-2019/h156). Tweets in regards to this topic will be found with the key words of this bill.
