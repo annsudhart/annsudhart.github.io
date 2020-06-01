@@ -13,7 +13,7 @@ function App() {
         <Navbar/>
         <Switch>
           <Route exact path="/" render={Home}></Route>
-          <Route exact path="/case-study/politician-tweet" component={CaseStudy}/>
+          <Route exact path="/case-study/:projectId" component={CaseStudy}/>
           <Route render={Page404}/>
         </Switch>
       </HashRouter>      
