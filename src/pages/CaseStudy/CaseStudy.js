@@ -79,6 +79,11 @@ function CaseStudy(props) {
       return (
         <div>
           <Markdown source={mdString1}/>
+          <div className="img-set">
+            <img src="https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/storyboard1.png"/>
+            <img src="https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/storyboard2.png"/>
+            <img src="https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/storyboard3.png"/>
+          </div>
           <Markdown source={mdString2}/>
           <Markdown source={mdString3}/>
         </div>
