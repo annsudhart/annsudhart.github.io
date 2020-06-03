@@ -1,3 +1,5 @@
+![splash image](https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/cardconnect-splash.png)
+
 # CardConnect
 
 ## Overview/Background
@@ -10,8 +12,11 @@ In today’s digital world, employers and job seekers need to make sharing conta
 
 ## Needfinding/User Research
 ### Research/Statistics
-10 billion business cards are printed in the U.S. annually
-88% paper cards will be thrown out in less than a week.
-2.5% increase in sales per 2000 cards shared
-9% add business card info into a digital list: 
-35% store their contacts “somewhere on their phone”
+![Statistics](https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/statistics.svg)
+
+These numbers tell us how ubiquitous and important business cards are for businesses. Indeed, business cards provide a great way to advertise your brand in a quick manner. Yet, only a few people put their business card info into a digital list or into their phone.
+
+This isn’t to say that digitizing business cards isn’t a good idea. According to members of the Forbes Agency Council, digitizing business cards, taking notes on them, and especially following up online afterwards can be a great way to utilize them. But because most methods of digitally sharing and synthesizing business card information are time consuming, we see a “friction” in the flow of information. This creates an opportunity to create something that provides a quick, seamless way to transfer information in a way that keeps value brand information and advertisement.
+## Prototypes
+
+### Storyboards
