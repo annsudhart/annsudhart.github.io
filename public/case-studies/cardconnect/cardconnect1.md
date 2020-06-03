@@ -1,3 +1,5 @@
+![splash image](https://annsudhart.github.io/case-studies/images/twitter-splash-img.png)
+
 # CardConnect
 
 ## Overview/Background
@@ -10,8 +12,3 @@ In today’s digital world, employers and job seekers need to make sharing conta
 
 ## Needfinding/User Research
 ### Research/Statistics
-10 billion business cards are printed in the U.S. annually
-88% paper cards will be thrown out in less than a week.
-2.5% increase in sales per 2000 cards shared
-9% add business card info into a digital list: 
-35% store their contacts “somewhere on their phone”
