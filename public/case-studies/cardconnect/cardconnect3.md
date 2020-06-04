@@ -23,20 +23,26 @@ To provide a good user experience, we want to gauge the ease of use of the app a
 3. Users wanted more freedom in being able to choose their own business card formats and styles. This was probably a result of users seeing that the default contacts had other styles as well.
 
 ### A/B Testing
+
 We were curious about the third observation we made during our personal interviews, so we performed A/B testing on the create page of our app. This required creating two versions of the new contact screen, which are [https://a9-cardconnect.herokuapp.com/newcontactA](https://a9-cardconnect.herokuapp.com/newcontactA) (Experiment A) and [https://a9-cardconnect.herokuapp.com/newcontactB](https://a9-cardconnect.herokuapp.com/newcontactB) (Experiment B). 
 
+![A/B Testing Diagram](https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/ABTesting.png)
 
 ### Interpretations of results
 
 It turned out our implementation of creating a business card via taking a photo requires extra steps. A user would need to click on the “Click to add a new picture” link and be redirected to an extra page for them to take a picture and select the picture they’d like to use. After looking at the data that we collected from Google Analytics, we understood that the options provided through Experiment A were more straightforward to use since it kept users on the same page to create a contact.
 
 ### Planned changes
-From the A/B testing, it is clear we need to make changes to the way we design business card scanning, as it is clunky and takes too many steps to be of good user experience. Therefore we plan on making Experiment A the primary screen for a user to create a new digital contact for their contacts list, while incorporating the feature that Experiment B provides as a secondary, alternative option. Additionally, we plan on making the arrows that allow a user to select which business card template they would like to use more prominent, because some users indicated that they overlooked them
+
+From the A/B testing, it is clear we need to make changes to the way we design business card scanning, as it is takes too many steps to be of good user experience. Therefore we plan on making Experiment A the primary screen for a user to create a new digital contact for their contacts list, while incorporating the feature that Experiment B provides as a secondary, alternative option. Additionally, we plan on making the arrows that allow a user to select which business card template they would like to use more prominent, because some users indicated that they overlooked them
 
 ### Version 2.0
 ![Version 2](https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/Version2.png)
 
 ## Final Result
+
+This is the final design we have for the app! You can check out the app demo at [https://a10-cardconnect.herokuapp.com](https://a10-cardconnect.herokuapp.com/) and typing anything into the login input fields.
+
 ![Final app design 1](https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/uisketch1.png)
 
 ![Final app design 2](https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/uisketch2.png)
