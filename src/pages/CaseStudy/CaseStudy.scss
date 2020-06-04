@@ -84,8 +84,12 @@
     }
 
     strong {
-        background: -webkit-linear-gradient(180deg, rgb(73, 92, 255), rgb(20, 107, 201));
-        background: linear-gradient(180deg, rgb(73, 92, 255), rgb(20, 107, 201));
+        background: -webkit-linear-gradient(180deg, rgba(73, 92, 255, 0.8), rgba(20, 107, 201, 0.8));
+        background: linear-gradient(180deg, rgba(73, 92, 255, 0.8), rgba(20, 107, 201, 0.8));
+        color: white;
+        font-weight: 500;
+        padding: 1px 5px;
+        border-radius: 10px;
     }
 }
 
