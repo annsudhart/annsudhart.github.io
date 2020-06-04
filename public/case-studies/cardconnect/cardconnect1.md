@@ -1,5 +1,3 @@
-![splash image](https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/cardconnect-splash.png)
-
 # CardConnect
 
 > In today's digital world, employers and job seekers need to make sharing contact information easier...
