@@ -4,13 +4,13 @@ import Carousel from '../../components/Carousel/Carousel';
 import './CaseStudy.scss';
 import Page404 from '../404/404';
 import { Helmet } from 'react-helmet';
+import Splash from '../../components/Splash/Splash';
 
 function CaseStudy(props) {
-  // const content;
+
   // make sure a valid case study name was passed in
   const {projectId} = props.match.params;
   const projectList = ['politician-tweet', 'cardconnect'];
-  let projectName = 'Case Study - Andrea Sudharta';
   let projectExists = false;
   let project;
   for (project of projectList) {
@@ -38,12 +38,15 @@ function CaseStudy(props) {
   const [mdString1, getmdString1] = useState('### Loading...');
   const [mdString2, getmdString2] = useState('### Loading...');
   const [mdString3, getmdString3] = useState('### Loading...');
+  const [projectName, setProjectName] = useState('Case Study - Andrea Sudharta');
+  const [projectImage, setProjectImage] = useState('');
 
   useEffect(() => {
     
     // politician-tweet rendering
     if(projectId === 'politician-tweet') {
-      projectName = 'Politician Twitter Analysis | Andrea Sudharta';
+      setProjectName('Politician Twitter Analysis | Andrea Sudharta');
+      setProjectImage('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/images/twitter-splash-img.png');
       fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/politician-twitter/politician-twitter1.md')
         .then(response => response.text())
         .then(result => getmdString1(result));
@@ -55,7 +58,8 @@ function CaseStudy(props) {
         .then(result => getmdString3(result));
     } else if(projectId === 'cardconnect') {
       // cardconnect rendering
-      projectName = 'Card Connect | Andrea Sudharta';
+      setProjectName('Card Connect | Andrea Sudharta');
+      setProjectImage('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/cardconnect-splash.png');
       fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/cardconnect1.md')
         .then(response => response.text())
         .then(result => getmdString1(result));
@@ -100,6 +104,7 @@ function CaseStudy(props) {
       <Helmet>
         <title> {projectName} </title>
       </Helmet>
+      <Splash image={projectImage} color={'#466992'}/>
       <div className="case-study">
         {getContent()}
       </div>
