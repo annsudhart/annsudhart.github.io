@@ -2,7 +2,7 @@
 
 # CardConnect
 
-*In today's digital world, employers and job seekers need to make sharing contact information easier...*
+> In today's digital world, employers and job seekers need to make sharing contact information easier...
 
 ## Overview/Background
 Every year, 27 million business cards are printed, ready to be exchanged and end up on someone’s pile of cards. With so many cards, recruiters and businesspeople have to deal with a clutter of information, eventually to be transferred manually from card to computer. Seeing this, a group of two people and I came to the conclusion that perhaps physical business cards don’t belong in the digital world. Through storyboarding, we identified personas that helped us narrow down our audience to employers and job-seekers, which led to a final product.
