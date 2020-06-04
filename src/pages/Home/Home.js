@@ -1,13 +1,17 @@
 import React from 'react';
 import './Home.scss';
 import Arrow from '../../components/Arrow/Arrow';
-import CardContainer from '../../components/CardContainer/CardContainer';
+import { Helmet } from 'react-helmet'
 import Card from '../../components/Card/Card';
-import {TwitterTimelineEmbed} from 'react-twitter-embed';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 function Home() {
   return (
     <div className="content">
+        <Helmet>    
+            <script src="/parallax.js"></script>
+            <script src="/scripts.js"></script>
+        </Helmet>
         <section className="splash">
             <div className="splash-container">
             <div className="row">
@@ -37,7 +41,7 @@ function Home() {
             <ul className="flex-container">
                 <Card id="maze-rescue" href="http://maze-rescue.com" text="Maze Rescue"/>
                 <Card id="truther-tweet" href="/#/case-study/politician-tweet" text="US Politician+Twitter Analysis"/>
-                <Card id="card-connect" href="https://a10-cardconnect.herokuapp.com/" text="Card Connect"/>
+                <Card id="card-connect" href="/#/case-study/cardconnect" text="Card Connect"/>
                 <Card id="computing-paths" href="http://computingpaths.ucsd.edu" text="Computing Paths"/>
                 <Card id="carbon-calc" href="https://github.com/absambam/Carbon-Footprint-Calculator/" text="Carbon Footprint Calculator"/>
                 <Card id="any-a" href="https://annsudhart.github.io/hackxx2018/" text="ANY-A"/>

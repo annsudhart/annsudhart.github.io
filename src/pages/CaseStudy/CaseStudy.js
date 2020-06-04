@@ -3,12 +3,14 @@ import Markdown from 'react-markdown';
 import Carousel from '../../components/Carousel/Carousel';
 import './CaseStudy.scss';
 import Page404 from '../404/404';
+import { Helmet } from 'react-helmet';
 
 function CaseStudy(props) {
   // const content;
   // make sure a valid case study name was passed in
   const {projectId} = props.match.params;
   const projectList = ['politician-tweet', 'cardconnect'];
+  let projectName = 'Case Study - Andrea Sudharta';
   let projectExists = false;
   let project;
   for (project of projectList) {
@@ -41,6 +43,7 @@ function CaseStudy(props) {
     
     // politician-tweet rendering
     if(projectId === 'politician-tweet') {
+      projectName = 'Politician Twitter Analysis | Andrea Sudharta';
       fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/politician-twitter/politician-twitter1.md')
         .then(response => response.text())
         .then(result => getmdString1(result));
@@ -52,6 +55,7 @@ function CaseStudy(props) {
         .then(result => getmdString3(result));
     } else if(projectId === 'cardconnect') {
       // cardconnect rendering
+      projectName = 'Card Connect | Andrea Sudharta';
       fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/cardconnect1.md')
         .then(response => response.text())
         .then(result => getmdString1(result));
@@ -93,6 +97,9 @@ function CaseStudy(props) {
 
   return (
     <div>
+      <Helmet>
+        <title> {projectName} </title>
+      </Helmet>
       <div className="case-study">
         {getContent()}
       </div>
