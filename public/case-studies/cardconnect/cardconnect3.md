@@ -14,7 +14,7 @@ Our app supports good information design by keeping networking information such 
 
 ## Testing
 
-![User testing the app](https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/usertest.jpg)
+![User testing the app](https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/usertest2.jpg)
 
 To provide a good user experience, we want to gauge the ease of use of the app and minimize the chance that users have slips. So, we interviewed several people mainly to obtain feedback on how the app feels to use and how we can improve the effectiveness of the UI for our intended audience. Asking people to perform several tasks a user might do when using the app, we noticed several things:
 
