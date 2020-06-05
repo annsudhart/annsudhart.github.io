@@ -77,6 +77,9 @@ function CaseStudy(props) {
     if(projectId === 'politician-tweet'){
       return (
         <div>
+          <a target="_blank" href="https://github.com/annsudhart/politician-twitter-analysis" className="resume-btn">
+            View GitHub
+          </a>
           <Markdown source={mdString1}/>
           <Carousel imgList={imagesList}/>
           <Markdown source={mdString2}/>
@@ -86,6 +89,12 @@ function CaseStudy(props) {
     } else {
       return (
         <div>
+          <a target="_blank" href="https://github.com/annsudhart/COGS120-CardConnect" className="resume-btn">
+            View code
+          </a>
+          <a target="_blank" href="https://a10-cardconnect.herokuapp.com" className="resume-btn">
+            View final product
+          </a>
           <Markdown source={mdString1}/>
           <div className="img-set">
             <img src="https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/storyboard1.png"/>

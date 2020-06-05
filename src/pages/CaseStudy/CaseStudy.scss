@@ -91,7 +91,23 @@
         padding: 1px 5px;
         border-radius: 10px;
     }
+    .resume-btn {
+        display: inline-block;
+        margin: 1em;
+        margin-top: 2em;
+        margin-left: 0px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .resume-btn:hover {
+        color: #4b4bff;
+        margin: 1em;
+        margin-left: 0px;
+        text-decoration: none;
+    }
 }
+
 
 content {
     width: 100%;
