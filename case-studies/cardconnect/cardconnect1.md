@@ -10,7 +10,7 @@ This final product is **CardConnect, an app that streamlines the networking proc
 
 ## Problem Statement
 
-**In today’s digital world, employers and job seekers need to make sharing contact information simpler and easier than inconvenient processes such as manually transferring information from card to computer. We can solve this by storing and retrieving business cards from digital databases on a mobile app.**
+In today’s digital world, employers and job seekers need to make sharing contact information **simpler** and **easier** than inconvenient processes such as manually transferring information from card to computer. We can solve this by storing and retrieving business cards from digital databases on a mobile app.
 
 ## Needfinding/User Research
 ### Research/Statistics
