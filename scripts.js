@@ -1,13 +1,6 @@
 $(document).scroll(function() {
-    /*
-    if ( $(this).scrollTop() > $('.splash .row div').height()/8 ) {
-      $('.splash .row div h1').addClass('blue');
-      $('.splash .row div h1').removeClass('white');
-    } else {
-      $('.splash .row div h1').addClass('white');
-      $('.splash .row div h1').removeClass('blue');
-    } */
 
+    /* Highlights sections of the navbar depending on the user window location */
     if( $(this).scrollTop() < $('#about-me')[0].offsetTop ) {
       $('.navbar-item').removeClass('selected');
       $('.navbar-brand').addClass('selected');
