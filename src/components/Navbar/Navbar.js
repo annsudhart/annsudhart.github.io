@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.scss';
+import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component {
     render() {
@@ -14,11 +15,11 @@ class Navbar extends React.Component {
                     </svg>
                 </div>
                 <ul>
-                    <li className="navbar-list navbar-item"><a href="#about-me">Projects</a></li>
-                    <li className="navbar-list navbar-item"><a href="#more">About Me</a></li>
-                    <li className="navbar-list navbar-item"><a href="#contact">Contact</a></li>
-                    <li className="navbar-list navbar-item"><a href="resume.pdf">Resume</a></li>
-                    <li className="navbar-list navbar-item"><a href="https://github.com/annsudhart">GitHub</a></li>
+                    <li className="navbar-list navbar-item"><Link to="#">Projects</Link></li>
+                    <li className="navbar-list navbar-item"><Link to="#">About Me</Link></li>
+                    <li className="navbar-list navbar-item"><Link to="#">Contact</Link></li>
+                    <li className="navbar-list navbar-item"><Link to="/resume.pdf">Resume</Link></li>
+                    <li className="navbar-list navbar-item"><Link to="https://github.com/annsudhart">GitHub</Link></li>
                 </ul>
             </nav>
         );

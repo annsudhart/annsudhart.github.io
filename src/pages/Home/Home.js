@@ -51,12 +51,12 @@ function Home() {
             <h1>Community Involvement and More</h1>
             <img alt="teamwork" src="/media/community.svg"/>
             <p>
-            I am also striving to improve my leadership skills, whether if it is
-            as the chair of my college's residence hall council, or as an organizer
-            for SD Hacks, an annual hackathon at UC San Diego. Furthermore, I am attending 
-            hackathons and technology related events in order to connect with 
-            the tech world and improve my skills. I won first place 
-            in HackXX 2018 and won best Google Cloud Hack at Rose Hack 2019.
+                I am also striving to improve my leadership skills, whether if it is
+                as the chair of my college's residence hall council, or as an organizer
+                for SD Hacks, an annual hackathon at UC San Diego. Furthermore, I am attending 
+                hackathons and technology related events in order to connect with 
+                the tech world and improve my skills. I won first place 
+                in HackXX 2018 and won best Google Cloud Hack at Rose Hack 2019.
             </p>
         </section>
         <section className="more">
