@@ -6,7 +6,7 @@ import Page404 from '../404/404';
 import { Helmet } from 'react-helmet';
 import Splash from '../../components/Splash/Splash';
 
-function CaseStudy(props) {
+function CaseStudy (props) {
 
   // make sure a valid case study name was passed in
   const {projectId} = props.match.params;
@@ -40,6 +40,7 @@ function CaseStudy(props) {
   const [mdString3, getmdString3] = useState('### Loading...');
   const [projectName, setProjectName] = useState('Case Study - Andrea Sudharta');
   const [projectImage, setProjectImage] = useState('');
+  const [projectTheme, setProjectTheme] = useState('#CCC');
 
   useEffect(() => {
     
@@ -47,6 +48,7 @@ function CaseStudy(props) {
     if(projectId === 'politician-tweet') {
       setProjectName('Politician Twitter Analysis | Andrea Sudharta');
       setProjectImage('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/images/twitter-splash-img.png');
+      setProjectTheme('#0091c1')
       fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/politician-twitter/politician-twitter1.md')
         .then(response => response.text())
         .then(result => getmdString1(result));
@@ -60,6 +62,7 @@ function CaseStudy(props) {
       // cardconnect rendering
       setProjectName('Card Connect | Andrea Sudharta');
       setProjectImage('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/cardconnect-splash.png');
+      setProjectTheme('#4b4bff;')
       fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/cardconnect1.md')
         .then(response => response.text())
         .then(result => getmdString1(result));
@@ -113,7 +116,7 @@ function CaseStudy(props) {
       <Helmet>
         <title> {projectName} </title>
       </Helmet>
-      <Splash image={projectImage} color={'#466992'}/>
+      <Splash image={projectImage} color={projectTheme}/>
       <div className="case-study">
         {getContent()}
       </div>

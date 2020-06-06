@@ -1,6 +1,7 @@
 .case-study {
     background-color: white;
     min-height: 100vh;
+    font-size: 1.1em;
     width: 70%;
     padding: 0 15%;
     overflow-wrap: anywhere;
@@ -16,15 +17,16 @@
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     h2 {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 
     h3 {
         font-size: 1.5em;
+        color: #aaa;
     }
 
     p {
@@ -45,13 +47,14 @@
 
     li {
         margin: 0;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     blockquote {
 
         quotes: "/*""*/""\201C""\201D";
-        margin: 0px;
+        margin: 0px auto;
+        width: fit-content;
         
         p {
             display: inline-block;
@@ -60,7 +63,7 @@
 
     blockquote:before, blockquote:after {
         display: inline-block;
-        font-size: 3em;
+        font-size: 2.5em;
         opacity: 0.25;
     }
 
@@ -91,6 +94,7 @@
         padding: 1px 5px;
         border-radius: 10px;
     }
+
     .resume-btn {
         display: inline-block;
         margin: 1em;
@@ -102,7 +106,7 @@
 
     .resume-btn:hover {
         color: #4b4bff;
-        margin: 1em;
+        margin-top: 2em;
         margin-left: 0px;
         text-decoration: none;
     }
