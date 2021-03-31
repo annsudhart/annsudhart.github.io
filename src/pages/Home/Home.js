@@ -39,17 +39,13 @@ function Home() {
             </a>
             <h2>Projects</h2>
             <ul className="flex-container">
-                <Card id="maze-rescue" href="http://maze-rescue.com" text="Maze Rescue"/>
                 <Card id="truther-tweet" href="/#/case-study/politician-tweet" text="US Politician+Twitter Analysis"/>
                 <Card id="card-connect" href="/#/case-study/cardconnect" text="Card Connect"/>
-                <Card id="computing-paths" href="http://computingpaths.ucsd.edu" text="Computing Paths"/>
-                <Card id="carbon-calc" href="https://github.com/absambam/Carbon-Footprint-Calculator/" text="Carbon Footprint Calculator"/>
-                <Card id="any-a" href="https://annsudhart.github.io/hackxx2018/" text="ANY-A"/>
             </ul>
         </section>
         <section id="moreDivider" className="moreDivider">
             <h1>Community Involvement and More</h1>
-            <img alt="teamwork" src="/media/community.svg"/>
+            <img alt="teamwork" src="/media/community.png"/>
             <p>
                 I am also striving to improve my leadership skills, whether if it is
                 as the chair of my college's residence hall council, or as an organizer
@@ -75,7 +71,7 @@ function Home() {
                 </li>
                 <li>
                 <div className="hexagon"
-                    style={{"background": "url('/media/rosehack-logo.png'), #a588bf", "backgroundSize": "140%"}}></div>
+                    style={{"background": "url('/media/rosehack-logo.png'), #a588bf", "backgroundSize": "150%"}}></div>
                 Rose Hack 2019
                 </li>
                 <li>
