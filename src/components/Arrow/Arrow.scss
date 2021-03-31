@@ -5,6 +5,28 @@
     margin-bottom: 10px;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
+
+    a {
+      display: inline-block;
+      border-radius: 50%;
+      margin: 15px;
+      transition: padding-right 1.5s, padding-left 1.5s, padding-top 1.5s, margin 2s, background-color 2s, animation 2s, transform 2s;
+      -webkit-transition: padding-right 1.5s, padding-left 1.5s, padding-top 1.5s, margin 2s, background-color 2s, animation 2s, transform 2s;
+    }
+    a:hover {
+      animation: glowContainer 12s ease-in-out infinite;
+      -webkit-animation: glowContainer 12s ease-in-out infinite;
+      padding: 0 6px;
+      padding-top: 13px;
+      margin: 9px;
+      background-color: #19a2ff;
+      transition: padding-right 1.5s, padding-left 1.5s, padding-top 1.5s, margin 2s, background-color 2s, animation 2s, transform 2s;
+      -webkit-transition: padding-right 1.5s, padding-left 1.5s, padding-top 1.5s, margin 2s, background-color 2s, animation 2s, transform 2s;
+      width: 50px;
+      height: 50px;
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
 }
 
 #arrow {
@@ -19,17 +41,16 @@
   border-color: #00cccc;
   animation: glow 12s ease-in-out infinite;
   -webkit-animation: glow 12s ease-in-out infinite;
-  transition: transform 2s, border-color 2s;
-  -webkit-transition: -webkit-transform 1s, border-color .5s;
+  transition: border-color 2s;
+  -webkit-transition: border-color 2s;
 }
 
 #arrow:hover {
-  border-color: black;
-  border-style: double;
+  border-color: white;
   animation: none;
   -webkit-animation: none;
-  transform: rotate(405deg);
-  -webkit-transform: rotate(405deg);
+  transition: border-color 2s;
+  -webkit-transition: border-color 2s;
 }
 
 @keyframes glow {
@@ -49,28 +70,24 @@
     border-color: #00ced1;
   }
 }  
-  /* background: linear-gradient(0deg, #440082, #00ced1, #b100af);
-background-size: 600% 600%;
 
--webkit-animation: AnimationName 59s ease infinite;
--moz-animation: AnimationName 59s ease infinite;
-animation: AnimationName 59s ease infinite;
+@keyframes glowContainer {
+  0% {
+    background-color: #00ced1;
+  }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:49% 0%}
-    50%{background-position:52% 100%}
-    100%{background-position:49% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:49% 0%}
-    50%{background-position:52% 100%}
-    100%{background-position:49% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position:49% 0%}
-    50%{background-position:52% 100%}
-    100%{background-position:49% 0%}
-} */
+  33% {
+    background-color: #725feb;
+  }
+
+  66% {
+    background-color: #941470;
+  }
+
+  100% {
+    background-color: #00ced1;
+  }
+}  
 
 @media only screen and (max-width: 720px) {
 
