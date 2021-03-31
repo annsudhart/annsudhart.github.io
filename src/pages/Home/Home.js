@@ -29,10 +29,9 @@ function Home() {
         </section>
         <section id="about-me" className="about">
             <p>
-            Welcome to my webpage! I'm Andrea, a third year student in
-            UC San Diego studying Math-CS. My interests lie in the intersection
+            Welcome to my webpage! I'm Andrea, a junior software engineer. My interests lie in the intersection
             between <span style={{"color": "rgb(80, 225, 200)"}}>human computer interaction</span> and <span style={{"color": "rgb(75, 75, 255)"}}>data</span>. 
-            Currently, I am a data programmer for the UCSD School of Medicine and will intern at Verizon Media over the summer.
+            Starting this summer, I will be working for Yahoo Sports!
             </p>
             <a target="_blank" href="resume.pdf" className="resume-btn">
             View my resume
