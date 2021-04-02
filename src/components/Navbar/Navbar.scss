@@ -67,8 +67,11 @@ svg#hamburger-icon:hover, svg.nav-expand {
 
 .nav-expand {
     display: block!important;
+    height: auto!important;
     margin: 0px;
+    max-height: 400px!important;
     padding: 0px;
+    transition: max-height ease-in-out 1s;
 }
 
 @keyframes trace {
@@ -114,8 +117,18 @@ svg#hamburger-icon {
     .navbar-item {
         background-color: white;
     }
+
+    .navbar-item:hover {
+        background-color: white;
+    }
+
     .navbar ul {
-        display: none;
+        display: block;
+        max-height: 0;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0;
+        transition: max-height ease-in-out 1s;
     }
 
     .menu-icon {
