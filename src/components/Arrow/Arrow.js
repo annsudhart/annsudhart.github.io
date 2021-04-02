@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Arrow.scss';
 
-class Arrow extends React.Component {
-    render() {
-        return (
-            <div id="arrow-container">
-                <a href="#">
-                    <div id="arrow"></div>
-                </a>
-            </div>
-        );
-    }
+function Arrow() {
+
+    const [white, setWhite] = useState('');
+
+    return (
+        <div id="arrow-container">
+            <a 
+                href="#" 
+                onMouseEnter={() => {setWhite('white')}}
+                onMouseLeave={() => {setWhite('')}}
+            >
+                <div id="arrow" class={`${white}`}></div>
+            </a>
+        </div>
+    );
+
 }
 
 export default Arrow;

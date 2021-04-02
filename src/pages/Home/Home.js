@@ -59,24 +59,38 @@ function Home() {
             <div className="hex-wrapper">
             <ul>
                 <li>
-                <div className="hexagon" 
-                    style={{"backgroundImage": "url('/media/sdhacks-logo.svg')"}}></div>
-                SDHacks 2018
+                    <a 
+                      className="hexagon"
+                       href="https://devpost.com/software/carbon-emission-calculator"
+                       style={{"backgroundImage": "url('/media/sdhacks-logo.svg')"}}>
+                    </a>
+                    SDHacks 2018
                 </li>
                 <li>
-                <div className="hexagon"
-                    style={{"backgroundImage": "url('/media/hackxx-logo.svg')", "backgroundColor": "#941470", "backgroundSize": "70%"}}></div>
-                HackXX 2018, 2019
+                    <a 
+                        className="hexagon"
+                        href="https://devpost.com/software/any-a"
+                        style={{"backgroundImage": "url('/media/hackxx-logo.svg')", "backgroundColor": "#941470", "backgroundSize": "70%"}}>
+                    </a>
+                    HackXX 2018, 2019
                 </li>
                 <li>
-                <div className="hexagon"
-                    style={{"background": "url('/media/rosehack-logo.png'), #a588bf", "backgroundSize": "150%"}}></div>
+                    <a 
+                        className="hexagon"
+                        href="https://devpost.com/software/business-card-wallet"
+                        style={{"background": "url('/media/rosehack-logo.png'), #a588bf", "backgroundSize": "150%"}}>
+
+                    </a>
                 Rose Hack 2019
                 </li>
                 <li>
-                <div className="hexagon"
-                    style={{"backgroundImage": "url('/media/spectra-logo.png')"}}></div>
-                Spectra 2.0
+                    <a  
+                        className="hexagon"
+                        href="https://spectra2.devpost.com/"
+                        style={{"backgroundImage": "url('/media/spectra-logo.png')"}}>
+
+                    </a>
+                    Spectra 2.0
                 </li>
             </ul>
             </div>

@@ -8,29 +8,35 @@
 
     a {
       display: inline-block;
+      background-color: transparent;
       border-radius: 50%;
-      margin: 15px;
-      transition: padding-right 1.5s, padding-left 1.5s, padding-top 1.5s, margin 2s, background-color 2s, animation 2s, transform 2s;
-      -webkit-transition: padding-right 1.5s, padding-left 1.5s, padding-top 1.5s, margin 2s, background-color 2s, animation 2s, transform 2s;
+      margin: -25px;
+      transition: all 1.5s;
+      -webkit-transition: all 1.5s;
+      width: 50px;
+      height: 50px;
     }
     a:hover {
-      animation: glowContainer 12s ease-in-out infinite;
-      -webkit-animation: glowContainer 12s ease-in-out infinite;
       padding: 0 6px;
       padding-top: 13px;
-      margin: 9px;
       background-color: #19a2ff;
-      transition: padding-right 1.5s, padding-left 1.5s, padding-top 1.5s, margin 2s, background-color 2s, animation 2s, transform 2s;
-      -webkit-transition: padding-right 1.5s, padding-left 1.5s, padding-top 1.5s, margin 2s, background-color 2s, animation 2s, transform 2s;
+      transition: all 1.5s;
+      -webkit-transition: all 1.5s;
       width: 50px;
       height: 50px;
       transform: rotate(360deg);
       -webkit-transform: rotate(360deg);
     }
+    
+    .white {
+      animation: none;
+      border-color: white;
+      -webkit-animation: none;
+    }
 }
 
 #arrow {
-  border: solid #fff;
+  border: solid;
   border-width: 0 15px 15px 0;
   display: inline-block;
   padding: 7px;
