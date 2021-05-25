@@ -31,7 +31,13 @@ p {
 a {
   color: black;
 }
-  
+
+.bubble {
+  background-color: white;
+  height: 5px;
+  width: 5px;
+}
+
 .splash {
   h1 {
     font-family: 'Lato', sans-serif;
@@ -191,77 +197,22 @@ a {
   min-height: 300px;
 }
 
-.more ul{
-  position: relative;
-  width: 70%;
-  max-width: 300px;
+.more ul {
+  justify-content: center;
   margin: 0 auto;
   padding: 0;
-  display: block;
-}
-
-.more ul:after {
-  content: "";
-  display: block;
-  clear: both;
+  width: 70%;
+  flex-wrap: wrap;
 }
 
 .more li {
+  display: flex;
+  height: 20vw;
   list-style-type: none;
-  position: relative;
-  float: left;
-  width: 28%;
-  padding: 0 0 32.5% 0;
-  -o-transform: rotate(-60deg) skewY(30deg);
-  -moz-transform: rotate(-60deg) skewY(30deg);
-  -webkit-transform: rotate(-60deg) skewY(30deg);
-  -ms-transform: rotate(-60deg) skewY(30deg);
-  transform: rotate(-60deg) skewY(30deg);
-  background: $blue;
-  overflow: hidden;
-  visibility: hidden;
-  height: 0px;
-  margin: 0 0.5%;
-}
-
-.more li {
-  list-style-type: none;
-  position: relative;
-  float: left;
-  width: 38%;
-  padding: 0 0 44% 0;
-  -o-transform: rotate(-60deg) skewY(30deg);
-  -moz-transform: rotate(-60deg) skewY(30deg);
-  -webkit-transform: rotate(-60deg) skewY(30deg);
-  -ms-transform: rotate(-60deg) skewY(30deg);
-  transform: rotate(-60deg) skewY(30deg);
-  background: $blue;
-  overflow: hidden;
-  visibility: hidden;
-  height: 0px;
-  margin: 0 0.5%;
-}
-
-.hexagon{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(45deg, rgb(107, 41, 176) 0%, rgb(107, 41, 176) 26%,rgb(201, 24, 187) 26%, rgb(201, 24, 187) 45%,rgb(224, 20, 189) 45%, rgb(224, 20, 189) 53%,rgb(83, 45, 173) 53%, rgb(83, 45, 173) 59%,rgb(154, 33, 181) 59%, rgb(154, 33, 181) 62%,rgb(130, 37, 178) 62%, rgb(130, 37, 178) 66%,rgb(177, 28, 184) 66%, rgb(177, 28, 184) 77%,rgb(248, 16, 192) 77%, rgb(248, 16, 192) 100%);
-  -o-transform: skewY(-30deg) rotate(60deg);
-  -moz-transform: skewY(-30deg) rotate(60deg);
-  -webkit-transform: skewY(-30deg) rotate(60deg);
-  -ms-transform: skewY(-30deg) rotate(60deg);
-  transform: skewY(-30deg) rotate(60deg);
-  overflow: hidden;
-  background-position: center!important;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-    
-.more li * {
-  visibility: visible;
+  margin: 2vw;
+  max-height: 150px;
+  max-width: 150px;
+  width: 20vw;
 }
 
 .section-divider {
@@ -385,7 +336,7 @@ a {
   transition: all 300ms ease-out;
 }
 
-#carbon-calc:hover {
+#carbon-calc:hover, #carbon-calc:focus, #carbon-calc:focus-visible {
   color: white;
   background: rgba(51, 102, 51, 0.7);
 }
@@ -395,7 +346,7 @@ a {
   color: white;
 }
 
-#card-connect:hover {
+#card-connect:hover, #card-connect:focus, #card-connect:focus-visible {
   background: rgba(51, 51, 102, 0.7);
   color: white;
 }
@@ -406,7 +357,7 @@ a {
   transition: all 300ms ease;
 }
 
-#truther-tweet:hover {
+#truther-tweet:hover, #truther-tweet:focus, #truther-tweet:focus-visible {
   background: rgba(0, 204, 204, 0.7);
   color: white;
 }

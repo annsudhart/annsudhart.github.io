@@ -10,7 +10,7 @@ function CaseStudy (props) {
 
   // make sure a valid case study name was passed in
   const {projectId} = props.match.params;
-  const projectList = ['politician-tweet', 'cardconnect'];
+  const projectList = ['politician-tweet', 'cardconnect', 'cardconnect-new'];
   let projectExists = false;
   let project;
   for (project of projectList) {
@@ -72,6 +72,22 @@ function CaseStudy (props) {
       fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/cardconnect3.md')
         .then(response => response.text())
         .then(result => getmdString3(result));
+    } else if(projectId === 'cardconnect-new') {
+      // cardconnect rendering
+      setProjectName('Card Connect | Andrea Sudharta');
+      setProjectImage('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/cardconnect-splash.png');
+      setProjectTheme('#4b4bff;')
+      fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/cardconnect1.md')
+        .then(response => response.text())
+        .then(result => getmdString1(result));
+      fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/cardconnect2.md')
+        .then(response => response.text())
+        .then(result => getmdString2(result));
+      fetch('https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/cardconnect3.md')
+        .then(response => response.text())
+        .then(result => getmdString3(result));
+    } else {
+      console.log('no match');
     }
 
   });
@@ -89,6 +105,25 @@ function CaseStudy (props) {
           <Markdown source={mdString3}/>
         </div>
       )
+    } else if(projectId === 'cardconnect-new') {
+      return (
+        <div>
+          <a target="_blank" href="https://github.com/annsudhart/COGS120-CardConnect" className="resume-btn">
+            View code
+          </a>
+          <a target="_blank" href="https://a10-cardconnect.herokuapp.com" className="resume-btn">
+            View final product
+          </a>
+          <Markdown source={mdString1}/>
+          <div className="img-set">
+            <img src="https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/storyboard1.png"/>
+            <img src="https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/storyboard2.png"/>
+            <img src="https://raw.githubusercontent.com/annsudhart/annsudhart.github.io/source/public/case-studies/cardconnect/images/storyboard3.png"/>
+          </div>
+          <Markdown source={mdString2}/>
+          <Markdown source={mdString3}/>
+        </div>
+      );
     } else {
       return (
         <div>

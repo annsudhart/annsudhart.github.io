@@ -21,10 +21,11 @@
     transition: all 300ms ease-out;
     -webkit-transition: all 300ms ease-out;
 }
-  
-.flex-item:hover {
-    background-image:none;
-    color: white;
+
+.flex-item:hover, .flex-item:focus, .flex-item:focus-visible {
+    background-image: none!important;
+    background-position: center;
+    color: white!important;
 }
 
 @media only screen and (max-width: 400px) {

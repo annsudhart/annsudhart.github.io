@@ -12,7 +12,7 @@ function Arrow() {
                 onMouseEnter={() => {setWhite('white')}}
                 onMouseLeave={() => {setWhite('')}}
             >
-                <div id="arrow" class={`${white}`}></div>
+                <div id="arrow" className={`${white}`}></div>
             </a>
         </div>
     );

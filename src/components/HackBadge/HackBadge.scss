@@ -1,0 +1,17 @@
+.hexagon {
+    background-image: linear-gradient(45deg, rgb(107, 41, 176) 0%, rgb(107, 41, 176) 26%,rgb(201, 24, 187) 26%, rgb(201, 24, 187) 45%,rgb(224, 20, 189) 45%, rgb(224, 20, 189) 53%,rgb(83, 45, 173) 53%, rgb(83, 45, 173) 59%,rgb(154, 33, 181) 59%, rgb(154, 33, 181) 62%,rgb(130, 37, 178) 62%, rgb(130, 37, 178) 66%,rgb(177, 28, 184) 66%, rgb(177, 28, 184) 77%,rgb(248, 16, 192) 77%, rgb(248, 16, 192) 100%);
+    background-position: center!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: url('#badge');
+    font-size: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+.hexagon:focus, .hexagon:focus-visible {
+    opacity: 25%;
+}

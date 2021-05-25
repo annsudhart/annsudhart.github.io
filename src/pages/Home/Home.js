@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import Arrow from '../../components/Arrow/Arrow';
+import HackathonBadge from '../../components/HackBadge/HackBadge';
 import { Helmet } from 'react-helmet'
 import Card from '../../components/Card/Card';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
@@ -12,6 +13,7 @@ function Home() {
             <script src="/parallax.js"></script>
             <script src="/scripts.js"></script>
         </Helmet>
+        <div id="particles.js"></div>
         <section className="splash">
             <div className="splash-container">
             <div className="row">
@@ -57,40 +59,50 @@ function Home() {
         <section className="more">
             <h2>Hackathons I've been to</h2>
             <div className="hex-wrapper">
+            <svg version="1.1" viewBox="30 30" width="0" height="0">
+                <defs>
+                    <clipPath id="badge" clipPathUnits="objectBoundingBox" transform="scale(0.00325 0.00315)">
+                        <path fill="#19A2C4" d="M134.888,24.762c14.263-5.796,28.591-5.366,42.505,1.234c10.15,4.813,19.503,11.095,29.245,16.658
+                            c18.408,10.512,36.602,21.399,55.156,31.643c16.124,8.904,28.568,26.291,28.523,45.222c-0.044,16.558-0.022,33.116-0.022,49.674
+                            c0,15.976,0.164,31.953-0.043,47.926c-0.254,19.657-8.896,34.952-25.716,44.97c-24.781,14.759-49.896,28.956-74.898,43.339
+                            c-19.705,11.324-39.931,17.073-61.074,4.867c-26.203-15.128-52.388-30.286-78.587-45.417
+                            c-17.564-10.145-30.515-26.035-30.515-47.258c-0.001-32.2-0.246-64.403,0.09-96.601c0.209-20.094,9.429-35.432,26.861-45.586
+                            L134.888,24.762z"/>
+                    </clipPath>
+                </defs>
+            </svg>
             <ul>
                 <li>
-                    <a 
-                      className="hexagon"
-                       href="https://devpost.com/software/carbon-emission-calculator"
-                       style={{"backgroundImage": "url('/media/sdhacks-logo.svg')"}}>
-                    </a>
-                    SDHacks 2018
+                    <HackathonBadge 
+                        imageUrl="url('/media/sdhacks-logo.svg')"
+                        link="https://devpost.com/software/carbon-emission-calculator"
+                        name="SD Hacks 2018"
+                    />
                 </li>
                 <li>
-                    <a 
-                        className="hexagon"
-                        href="https://devpost.com/software/any-a"
-                        style={{"backgroundImage": "url('/media/hackxx-logo.svg')", "backgroundColor": "#941470", "backgroundSize": "70%"}}>
-                    </a>
-                    HackXX 2018, 2019
+                    <HackathonBadge
+                        color="#941470"
+                        imageUrl= "url('/media/hackxx-logo.svg')"
+                        link="https://devpost.com/software/any-a"
+                        name="HackXX 2018, 2019"
+                        size="54%"
+                    />
                 </li>
                 <li>
-                    <a 
-                        className="hexagon"
-                        href="https://devpost.com/software/business-card-wallet"
-                        style={{"background": "url('/media/rosehack-logo.png'), #a588bf", "backgroundSize": "150%"}}>
-
-                    </a>
-                Rose Hack 2019
+                    <HackathonBadge
+                        color="#a588bf"
+                        imageUrl= "url('/media/rosehack-logo.png')"
+                        link="https://devpost.com/software/business-card-wallet"
+                        name="Rose Hack 2019"
+                        size="137%"
+                    />
                 </li>
                 <li>
-                    <a  
-                        className="hexagon"
-                        href="https://spectra2.devpost.com/"
-                        style={{"backgroundImage": "url('/media/spectra-logo.png')"}}>
-
-                    </a>
-                    Spectra 2.0
+                    <HackathonBadge
+                        imageUrl= "url('/media/spectra-logo.png')"
+                        link="https://spectra2.devpost.com/"
+                        name="Spectra 2.0"
+                    />
                 </li>
             </ul>
             </div>
